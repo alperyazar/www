@@ -22,6 +22,7 @@ theme:
   hljs_languages:
     - matlab
     - latex
+    - tcl
 
 nav:
   - About: index.md
