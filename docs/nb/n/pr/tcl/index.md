@@ -13,6 +13,7 @@ language) this shouldn't be a problem. Tcl 8.5(.19) is last updated on 2016 [^2f
 and Tcl 8.0 ways back to 1999 [^3f].
 
 * [Installation](0010-installation.md)
+* [Hello World and Basics](0020-hello-world.md)
 
 ## Main Resources
 

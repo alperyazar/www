@@ -34,6 +34,30 @@ Check `Extensions` → `footnotes`.
 
 A citation to test entry in bibliography file: [@test]
 
+## Built-in
+
+### Code Highlight
+
+#### Shell
+
+```shell
+$ sudo apt install firefox
+# apt install firefox
+```
+
+#### Tcl
+
+```tcl
+% puts Hello World!
+# This is a comment
+```
+
+#### Text
+
+```text
+This is a plain text.
+```
+
 [^1f]: This is the first footnote. Check the link →
 [^iki]: This is the second footnote. Check the link →
 
