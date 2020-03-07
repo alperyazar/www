@@ -16,7 +16,8 @@ and Tcl 8.0 ways back to 1999 [^3f].
 
 ## Main Resources
 
-* [Tcl Tutorial](https://www.tcl.tk/man/tcl8.5/tutorial/tcltutorial.html)
+* [Tcl 8.6 Tutorial](https://nikit.tcl.tk/page/Tcl+Tutorial+Index)
+* [Tcl 8.5 Tutorial](https://www.tcl.tk/man/tcl8.5/tutorial/tcltutorial.html)
 
 [^1f]: [https://www.tcl.tk/software/tcltk/8.6.html](https://www.tcl.tk/software/tcltk/8.6.html)
 [^2f]: [https://www.tcl.tk/software/tcltk/8.5.html](https://www.tcl.tk/software/tcltk/8.5.html)

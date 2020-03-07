@@ -1,5 +1,6 @@
 ---
-summary: Tcl installation
+summary: "Tcl installation"
+date: "2020-03-06T22:43:05+03:00"
 ---
 # Tcl Installation
 
