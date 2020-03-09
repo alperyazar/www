@@ -15,6 +15,7 @@ and Tcl 8.0 ways back to 1999 [^3f].
 * [Installation](0010-installation.md)
 * [Hello World and Basics](0020-hello-world.md)
 * [Variable Assignment](0030-variable-assignment.md)
+* [`""`, `{}`, `[]` ,`\`](0040-evaluation-and-substitution.md)
 
 ## Main Resources
 
