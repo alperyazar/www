@@ -23,5 +23,6 @@ screen captures of websites and tweets"
 
 ## Programming
 
+* [commandlinefu.com](https://www.commandlinefu.com/) "commandlinefu.com is the place to record those command-line gems that you return to again and again. That way others can gain from your CLI wisdom and you from theirs too. All commands can be commented on, discussed and voted up or down."
 * [godbolt.org](https://godbolt.org/) "Compiler Explorer". Online compiler
 supporting variety of programming languages with assembly output.
