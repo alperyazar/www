@@ -5,6 +5,8 @@ summary: Personal bookmark
 
 ## Electronics
 
+* [Nagelfar](http://nagelfar.sourceforge.net/) Tcl syntax checker aimed for
+EDA tools (like synthesis tools). Found via [Reddit](https://www.reddit.com/r/FPGA/comments/f7bwvg/im_fpga_engineer_seeking_better_tools).
 * [WaveDrom](https://wavedrom.com/) "Digital Timing Diagram everywhere"
 Browser based rendering engine used to create beautiful looking digital
 timing diagrams. It is also possible to draw logic circuits.
