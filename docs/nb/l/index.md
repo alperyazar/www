@@ -9,6 +9,13 @@ summary: Personal bookmark
 Browser based rendering engine used to create beautiful looking digital
 timing diagrams. It is also possible to draw logic circuits.
 
+## Lectures
+
+* [Linux Kernel Teaching](https://linux-kernel-labs.github.io/refs/heads/master/index.html)
+"This is a collection of lectures and labs Linux kernel topics. The lectures focus on theoretical and Linux kernel exploration."
+Found via [Twitter](https://twitter.com/nixcraft/status/1238541838090264576).
+Alternative links: [1](https://github.com/linux-kernel-labs), [2](https://github.com/linux-kernel-labs/linux-kernel-labs.github.io)
+
 ## Misc
 
 * [Screenshot Guru](https://screenshot.guru/) "Take beautiful, high-resolution
