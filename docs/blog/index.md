@@ -2,6 +2,7 @@
 
 ## 2020
 
+* [Güncel Doğrulama Yöntemleri](2020-03-15-guncel-dogrulama-yontemleri.md)
 * [Merhaba MkDocs!](2020-01-19-merhaba-mkdocs.md)
 
 ## 2019
