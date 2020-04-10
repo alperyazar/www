@@ -4,7 +4,7 @@ install:
   - pip3 install -r requirements.txt
 
 script:
-  - mkdocs build --clean --strict --verbose --config-file mkdocs-production.yml
+  - mkdocs build --clean --verbose --config-file mkdocs-production.yml
   - touch ./site/.nojekyll
   - cp CNAME ./site
   - date -Iseconds >> ./site/build.info.txt
