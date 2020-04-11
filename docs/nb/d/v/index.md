@@ -1,3 +1,0 @@
-# V
-
-* [VLIW](vliw.md)
