@@ -1,5 +1,5 @@
 ---
-description: "Moved to https://alperyazar.com"
+summary: "Moved to https://alperyazar.com"
 ---
 # Moved
 
