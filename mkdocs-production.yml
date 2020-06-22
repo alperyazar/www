@@ -13,6 +13,7 @@ markdown_extensions:
 plugins:
   - search
   - git-revision-date
+  - htmlproofer
   - bibtex:
       bib_file: "ref/refs.bib"
       cite_style: "pandoc"
@@ -25,3 +26,15 @@ theme:
     - matlab
     - latex
     - tcl
+
+nav:
+  - About: index.md
+  - Contact - İletişim: contact.md
+  - Blog: blog/index.md
+  - Notebook:
+    - Dictionary: nb/d/index.md
+    - Knowledge Base: nb/kb/index.md
+    - Notes: nb/n/index.md
+    - Reviews - İncelemeler: nb/r/index.md
+    - Lists: nb/l/index.md
+  - Misc.: misc/index.md
