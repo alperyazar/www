@@ -3,16 +3,16 @@ language: python
 jobs:
   include:
     - stage: fast_deploy
-    - install:
+      install:
       - pip3 install -r requirements.txt
-    - script:
+      script:
       - mkdocs build --clean --strict --verbose --config-file mkdocs-production.yml
       - touch ./site/.nojekyll
       - cp CNAME ./site
       - date -Iseconds >> ./site/build.info.txt
       - chmod +x ./test/main-simple.sh
       - ./test/main-simple.sh
-    - deploy:
+      deploy:
         provider: pages
         local_dir: site
         skip_cleanup: true
