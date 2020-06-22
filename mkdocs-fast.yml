@@ -1,0 +1,39 @@
+copyright: "License: <a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC-BY-SA-4.0</a>"
+google_analytics: ['UA-155131137-1', 'ayazar.com']
+repo_url: https://github.com/alperyazar/www/
+site_author: Alper Yazar
+# site_description: Personal Site !! Not used to use custom meta description code.
+site_name: Alper Yazar
+site_url: https://www.ayazar.com/
+
+markdown_extensions:
+  - footnotes
+  - admonition
+
+plugins:
+  - search
+  - git-revision-date
+  - bibtex:
+      bib_file: "ref/refs.bib"
+      cite_style: "pandoc"
+
+theme:
+  name: cinder
+  custom_dir: cinder-theme-ext
+  highlightjs: true
+  hljs_languages:
+    - matlab
+    - latex
+    - tcl
+
+nav:
+  - About: index.md
+  - Contact - İletişim: contact.md
+  - Blog: blog/index.md
+  - Notebook:
+    - Dictionary: nb/d/index.md
+    - Knowledge Base: nb/kb/index.md
+    - Notes: nb/n/index.md
+    - Reviews - İncelemeler: nb/r/index.md
+    - Lists: nb/l/index.md
+  - Misc.: misc/index.md

@@ -2,20 +2,30 @@ language: python
 
 jobs:
   include:
+
     - stage: fast_deploy
       install:
       - pip3 install -r requirements.txt
       script:
-      - mkdocs build --clean --strict --verbose --config-file mkdocs-production.yml
+      - mkdocs build --clean --strict --verbose --config-file mkdocs-fast.yml
       - touch ./site/.nojekyll
       - cp CNAME ./site
       - date -Iseconds >> ./site/build.info.txt
-      - chmod +x ./test/main-simple.sh
-      - ./test/main-simple.sh
       deploy:
         provider: pages
         local_dir: site
         skip_cleanup: true
         deployment_file: true
         verbose: true
-        github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+        github_token: $GITHUB_TOKEN
+
+    - stage: production_tests
+        install:
+        - pip3 install -r requirements.txt
+        script:
+        - mkdocs build --clean --strict --verbose --config-file mkdocs-production.yml
+        - touch ./site/.nojekyll
+        - cp CNAME ./site
+        - date -Iseconds >> ./site/build.info.txt
+        - chmod +x ./test/main-simple.sh
+        - ./test/main-simple.sh  # Set in the settings page of your repository, as a secure variable
