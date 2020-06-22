@@ -19,12 +19,12 @@ jobs:
         github_token: $GITHUB_TOKEN
 
     - name: production_tests
-        install:
-        - pip3 install -r requirements.txt
-        script:
-        - mkdocs build --clean --strict --verbose --config-file mkdocs-production.yml
-        - touch ./site/.nojekyll
-        - cp CNAME ./site
-        - date -Iseconds >> ./site/build.info.txt
-        - chmod +x ./test/main-simple.sh
-        - ./test/main-simple.sh  # Set in the settings page of your repository, as a secure variable
+      install:
+      - pip3 install -r requirements.txt
+      script:
+      - mkdocs build --clean --strict --verbose --config-file mkdocs-production.yml
+      - touch ./site/.nojekyll
+      - cp CNAME ./site
+      - date -Iseconds >> ./site/build.info.txt
+      - chmod +x ./test/main-simple.sh
+      - ./test/main-simple.sh  # Set in the settings page of your repository, as a secure variable
