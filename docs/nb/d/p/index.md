@@ -1,3 +1,0 @@
-# P
-
-* [PARA](para.md)
