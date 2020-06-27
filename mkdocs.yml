@@ -19,6 +19,7 @@ plugins:
   - bibtex:
       bib_file: "ref/refs.bib"
       cite_style: "pandoc"
+  - git-revision-date
   - search
 
 
