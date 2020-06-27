@@ -9,19 +9,8 @@ summary: Alper Yazar. Ph.D. Candidate and Electronics Engineer. Personal Site.
 Hi!
 
 I am **Alper Yazar** and I am **Ph.D. Candidate** and **Electronics Engineer**.
-
-[LinkedIn](http://www.linkedin.com/in/alperyazar), [Google Scholar](https://scholar.google.com.tr/citations?hl=tr&user=yLCD7acAAAAJ),
-[Twitter](http://twitter.com/alper_yazar),
-[Facebook](https://www.facebook.com/alperyazarcom),
-[GitHub](https://github.com/alperyazar), [Stack Exchange](http://stackexchange.com/users/1966184/alper-y),
-[YouTube](https://www.youtube.com/user/alperyazar),
-[Hackaday](http://hackaday.io/ayazar)
-
-![https://orcid.org/sites/default/files/images/orcid\_16x16.png](https://orcid.org/sites/default/files/images/orcid_16x16.png)
-ORCID: [0000-0002-0904-9623](https://orcid.org/0000-0002-0904-9623)
-
-![https://publons.com/static/images/badge/rid\_badge\_small.png](https://publons.com/static/images/badge/rid_badge_small.png)
-Publons: [E-7451-2019](https://publons.com/researcher/E-7451-2019/)
+[![ORCID: 0000-0002-0904-9623](https://orcid.org/sites/default/files/images/orcid\_16x16.png)](https://orcid.org/0000-0002-0904-9623)
+[![Publons:E-7451-2019](https://publons.com/static/images/badge/rid\_badge\_small.png)](https://publons.com/researcher/E-7451-2019/)
 
 ## Contact - İletişim
 
