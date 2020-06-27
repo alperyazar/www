@@ -6,6 +6,7 @@ disqus: ''
 
 ## 2020
 
+* [Tekrar Merhaba DokuWiki!](2020-04-11-tekrar-merhaba-dokuwiki.md)
 * [Güncel Doğrulama Yöntemleri](2020-03-15-guncel-dogrulama-yontemleri.md)
 * [Merhaba MkDocs!](2020-01-19-merhaba-mkdocs.md)
 
