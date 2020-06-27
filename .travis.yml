@@ -11,6 +11,7 @@ jobs:
       - cp CNAME ./site
       - date -Iseconds >> ./site/build.info.txt
       - mkdocs --version >> ./site/build.info.txt
+      - git log -1 --oneline >> ./site/build.info.txt
       deploy:
         provider: pages
         local_dir: site
