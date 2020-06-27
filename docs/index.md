@@ -132,7 +132,7 @@ In 2015 METU EEE Graduate Research Workshop (GRW).
 - [aPCMeter](project/apcmeter/index.md) (completed)
 - [isoUSBRS422](project/isousbrs422/index.md) (completed)
 - [FPGA232KU](project/fpga232ku/index.md) (tamamlandı)
-- [devre.org, devreler.org](/project/devreorg-devrelerorg) (incomplete, old)
+- [devre.org, devreler.org](project/devre/index.md) (incomplete, old)
 - [NASuX, nasux.org](/project/nasux) (incomplete, old)
 - [devrelerhakkinda.com](project/devrelerhakkinda/index.md) (eski)
 - [kapasitans.com](/project/kapasitans) (incomplete, old)
