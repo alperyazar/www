@@ -10,6 +10,7 @@ jobs:
       - touch ./site/.nojekyll
       - cp CNAME ./site
       - date -Iseconds >> ./site/build.info.txt
+      - mkdocs --version >> ./site/build.info.txt
       deploy:
         provider: pages
         local_dir: site
