@@ -28,6 +28,10 @@ or `[^iki]` to avoid confusion because this format is used by the plugin.
 
 ## Plugins
 
+### disqus
+
+Check bottom of the page. Disqus form should appear.
+
 ### mkdocs-bibtex
 
 Check `Extensions` → `footnotes`.

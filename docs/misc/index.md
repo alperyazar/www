@@ -1,3 +1,7 @@
+---
+disqus: ''
+---
+
 # Miscellaneous
 
 - [Disclaimer](disclaimer)

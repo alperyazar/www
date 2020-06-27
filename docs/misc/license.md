@@ -1,3 +1,7 @@
+---
+disqus: ''
+---
+
 # License
 
 ![Free Cultural Work](img/freecultural.png)

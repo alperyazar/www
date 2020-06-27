@@ -1,6 +1,8 @@
 ---
 summary: My personal programming languages notes
+disqus: ''
 ---
+
 # Programming Languages
 
 ## PC

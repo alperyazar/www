@@ -1,3 +1,7 @@
+---
+disqus: ''
+---
+
 # Disclaimer
 
 In short, all materials are served **AS-IS**, with **NO WARRANTY**.

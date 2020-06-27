@@ -1,3 +1,7 @@
+---
+disqus: ''
+---
+
 # Site Info
 
 - ![Uptime](https://img.shields.io/uptimerobot/ratio/m784066757-5d6b061dfaf9531f911b85ca.svg "Uptime")

@@ -1,3 +1,7 @@
+---
+disqus: ''
+---
+
 # Notebook
 
 * [Knowledge Base](kb/index.md)

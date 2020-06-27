@@ -1,3 +1,7 @@
+---
+disqus: ''
+---
+
 # Reviews - İncelemeler
 
 ## EN
