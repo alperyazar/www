@@ -38,6 +38,7 @@ theme:
     code: Space Mono
   favicon: img/favicon.ico
   logo: img/alper_yazar.png
+  custom_dir: material-theme-overrides
 
 extra:
   disqus: ayazar
