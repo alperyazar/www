@@ -136,7 +136,7 @@ In 2015 METU EEE Graduate Research Workshop (GRW).
 - [NASuX, nasux.org](/project/nasux) (incomplete, old)
 - [devrelerhakkinda.com](project/devrelerhakkinda/index.md) (eski)
 - [kapasitans.com](/project/kapasitans) (incomplete, old)
-- [izoyazilim.com](/project/izoyazilim) (incomplete, old)
+- [izoyazilim.com](project/izoyazilim/index.md) (incomplete, old)
 - [izoelektronik.com](project/izoelektronik/index.md) (eski)
 
 ### Class
