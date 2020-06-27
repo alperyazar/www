@@ -1,3 +1,8 @@
+---
+summary: Contact to Alper Yazar
+disqus: ''
+---
+
 # Contact - İletişim
 
 ## EN
