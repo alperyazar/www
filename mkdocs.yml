@@ -1,28 +1,72 @@
-copyright: "License: <a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC-BY-SA-4.0</a>"
-repo_url: https://github.com/alperyazar/www/
+copyright: "Copyright &copy; 2011-2020 Alper Yazar<br/>License: <a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC-BY-SA-4.0</a>"
 site_author: Alper Yazar
 # site_description: Personal Site !! Not used to use custom meta description code.
 site_name: Alper Yazar
-site_url: https://www.ayazar.com/
+site_url: http://localhost:8000/
 
 markdown_extensions:
-  - footnotes
   - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: true
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+
 
 plugins:
-  - search
   - bibtex:
       bib_file: "ref/refs.bib"
       cite_style: "pandoc"
+  - search
+
 
 theme:
-  name: cinder
-  custom_dir: cinder-theme-ext
-  highlightjs: true
-  hljs_languages:
-    - matlab
-    - latex
-    - tcl
+  name: material
+  language: en
+  palette:
+    scheme: preference
+    primary: blue
+    accent: orange
+  font:
+    text: Nunito
+    code: Space Mono
+  favicon: img/favicon.ico
+  logo: img/alper_yazar.png
+
+extra:
+  social:
+    - icon: fontawesome/brands/orcid
+      link: https://orcid.org/0000-0002-0904-9623
+      name: My ORCID Page
+    - icon: fontawesome/brands/linkedin
+      link: http://www.linkedin.com/in/alperyazar
+      name: My LinkedIn Profile
+    - icon: fontawesome/solid/graduation-cap
+      link: https://scholar.google.com.tr/citations?hl=tr&user=yLCD7acAAAAJ
+      name: My Google Scholar Profile
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/alperyazar
+      name: My Github Page
+    - icon: fontawesome/solid/skull-crossbones
+      link: http://hackaday.io/ayazar
+      name: My Hackaday Profile
+    - icon: fontawesome/brands/twitter
+      link: http://twitter.com/alper_yazar
+      name: My Twitter Profile
+    - icon: fontawesome/brands/reddit
+      link: https://www.reddit.com/user/ayazar/
+      name: My Reddit Profile
+    - icon: fontawesome/brands/stack-exchange
+      link: http://stackexchange.com/users/1966184/alper-y
+      name: My Stack Exchange Profile
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/user/alperyazar
+      name: My YouTube Channel
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/alperyazarcom
+      name: My Facebook Page
 
 nav:
   - About: index.md
