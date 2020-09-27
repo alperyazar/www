@@ -2,7 +2,7 @@
 summary: Alper Yazar, Ph.D. Candidate and Electronics Engineer.
 ---
 <!-- markdownlint-disable MD005 MD007 -->
-# Hi!
+# About me
 
 ## Professional Experience
 
