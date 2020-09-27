@@ -2,21 +2,14 @@
 summary: Alper Yazar, Ph.D. Candidate and Electronics Engineer.
 ---
 <!-- markdownlint-disable MD005 MD007 -->
-# About
+# Hi!
 
-![Alper Yazar](img/alper_yazar.png)
+## Professional Experience
 
-Hi!
-
-I am **Alper Yazar** and I am **Ph.D. Candidate** and **Electronics Engineer**.
-[![ORCID: 0000-0002-0904-9623](https://orcid.org/sites/default/files/images/orcid\_16x16.png)](https://orcid.org/0000-0002-0904-9623)
-[![Publons:E-7451-2019](https://publons.com/static/images/badge/rid\_badge\_small.png)](https://publons.com/researcher/E-7451-2019/)
-
-## Contact - İletişim
-
-**EN:** Please visit the [Contact](contact.md#en) page.
-
-**TR:** Lütfen [İletişim](contact.md#tr) sayfasını ziyaret ediniz.
+- **Project Co-manager.** [ACCLOUD](http://accloud.eee.metu.edu.tr), **April 2018 to present.**
+- **Electronics Engineer.** ASELSAN, Ankara, TURKEY, **August 2012 to present.**
+- **Intern.** ASELSAN, Ankara, TURKEY, **June 2011 to July 2011.**
+- **Intern.** Bosch Rexroth, Bursa, TURKEY, **June 2010 to July 2010.**
 
 ## Education
 
@@ -30,13 +23,6 @@ I am **Alper Yazar** and I am **Ph.D. Candidate** and **Electronics Engineer**.
     - Area of Study: Statistical Signal Processing
   - **B.Sc.**, Electrical and Electronics Engineering, Middle East Technical University (METU), Ankara, TURKEY, **2012**. CGPA: 3.93/4.00
     - Specialization: Computers and Telecommunication
-
-## Professional Experience
-
-- **Project Co-manager.** [ACCLOUD](http://accloud.eee.metu.edu.tr), **April 2018 to present.**
-- **Electronics Engineer.** ASELSAN, Ankara, TURKEY, **August 2012 to present.**
-- **Intern.** ASELSAN, Ankara, TURKEY, **June 2011 to July 2011.**
-- **Intern.** Bosch Rexroth, Bursa, TURKEY, **June 2010 to July 2010.**
 
 ## Patents
 
@@ -200,9 +186,5 @@ In 2015 METU EEE Graduate Research Workshop (GRW).
 ## Personal Activities
 
 - Trying playing various musical instruments
-
----
-
-[Old Pages](https://www.alperyazar.com/old)
 
 [^1]: After successful technical examination including originality, application to eligible countries is cancelled due to financial issues.

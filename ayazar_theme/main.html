@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+        <link href="{{ 'skeleton.css'|url }}" rel="stylesheet">
+        <link href="{{ 'normalize.css'|url }}" rel="stylesheet">
+        <link href="{{ 'ayazar.css'|url }}" rel="stylesheet">
+
+        {% if config.theme.favicon %}
+        <link rel="shortcut icon" href="{{config.theme.favicon | url}}">
+        {% endif %}
+
+        {% if page and page.meta.summary %}
+        <meta name="description" content="{{ page.meta.summary }}">
+        {% endif %}
+
+        <meta name="generator" content="mkdocs-{{ mkdocs_version }}">
+
+        {% if page.canonical_url %}
+        <link rel="canonical" href="{{ page.canonical_url }}" />
+        {% endif %}
+
+        {% if config.google_analytics %}
+            {% set analytics = config.google_analytics %}
+            <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","{{ analytics[0] }}","{{ analytics[1] }}"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview",document.location.pathname)})</script>
+            <script async src="https://www.google-analytics.com/analytics.js"></script>
+        {% endif %}
+
+        <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+    </head>
+    <body>
+
+    <div class="container">
+        <div class="row" style="margin-top: 5%; text-align: center;">
+            <div class="column">
+            {% if nav|length>1 %}
+            {% for nav_item in nav %}
+                {% if nav_item.children %}
+                    [{{ nav_item.title }}:
+                        {% for nav_item in nav_item.children %}
+                        [
+                            <a href="{{ nav_item.url|url }}">{{ nav_item.title }}</a>
+                        ]
+                        {% endfor %}
+                    ]
+                {% else %}
+                [
+                    <a href="{{ nav_item.url|url }}">{{ nav_item.title }}</a>
+                ]
+                {% endif %}
+            {% endfor %}
+            {% endif %}
+            </div>
+        </div>
+        <div class="row" style="margin-top: 0%">
+            <div class="three columns">
+                <center>
+                <h1><a href="{{ '/'|url }}" style="text-decoration:none; color:inherit;">Alper Yazar</a></h1>
+                {% if config.theme.logo %}
+                <img src="{{config.theme.logo | url}}" />
+                </center>
+                {% endif %}
+                <center>
+                <p>Ph.D. Candidate at <a href="http://eee.metu.edu.tr/">METU</a>, Electronics Engineer at <a href="https://www.aselsan.com.tr/">ASELSAN</a>, Project Co-manager of <a href="http://accloud.eee.metu.edu.tr/">ACCLOUD</a></p>
+                </center>
+                <center>
+                <p>
+                <a href="https://orcid.org/0000-0002-0904-9623"><img alt="ORCID: 0000-0002-0904-9623" src="{{ 'orcid-24.png'|url }}" /></a>
+                <a href="https://publons.com/researcher/E-7451-2019/"><img alt="Publons:E-7451-2019" src="{{ 'publons-24.png'|url }}" /></a>
+                <a href="http://www.linkedin.com/in/alperyazar"><img alt="Linkedin" src="{{ 'linkedin-24.png'|url }}" /></a>
+                <a href="https://scholar.google.com.tr/citations?hl=tr&user=yLCD7acAAAAJ"><img alt="Google Scholar" src="{{ 'google-scholar-24.png'|url }}" /></a>
+                <a href="https://github.com/alperyazar"><img alt="Github" src="{{ 'github-24.png'|url }}" /></a>
+                <a href="http://hackaday.io/ayazar"><img alt="Hackaday" src="{{ 'twitter-24.png'|url }}" /></a>
+                <a href="http://twitter.com/alper_yazar"><img alt="Twitter" src="{{ 'linkedin-24.png'|url }}" /></a>
+                <a href="https://www.reddit.com/user/ayazar/"><img alt="Reddit" src="{{ 'reddit-24.png'|url }}" /></a>
+                <a href="http://stackexchange.com/users/1966184/alper-y"><img alt="Stack Exchange" src="{{ 'stackexchange-24.png'|url }}" /></a>
+                <a href="https://www.youtube.com/user/alperyazar"><img alt="YouTube" src="{{ 'youtube-24.png'|url }}" /></a>
+                <a href="https://www.facebook.com/alperyazarcom"><img alt="Facebook" src="{{ 'facebook-24.png'|url }}" /></a>
+                </p>
+                </center>
+            </div>
+        <div class="nine columns" style="text-align: justify;">
+                {{ page.content }}
+                
+                {% set disqus = config.extra.disqus %}
+                {% if page and page.meta and page.meta.disqus is string %}
+                    {% set disqus = page.meta.disqus %}
+                {% endif %}
+                {% if not page.is_homepage and disqus %}
+                    <h2 id="__comments">{{ lang.t("meta.comments") }}</h2>
+                    <div id="disqus_thread"></div>
+                    <script>var disqus_config=function(){this.page.url="{{ page.canonical_url }}",this.page.identifier="{{ page.canonical_url | replace(config.site_url, '') }}"};window.addEventListener("load",function(){var e=document,i=e.createElement("script");i.src="//{{ disqus }}.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)})</script>
+                {% endif %}
+
+            <hr />
+                {% if page and page.meta.date %}
+                    <p>First publish: {{ page.meta.date }}</p>
+                {% endif %}
+                <!-- mkdocs-git-revision-date-localized-plugin -->
+                {% if page.meta.git_revision_date_localized %}
+                    <p>Last update: {{ page.meta.git_revision_date_localized }}</p>
+
+                <!-- mkdocs-git-revision-date-plugin -->
+                {% elif page.meta.revision_date %}
+                    <p>Last update: {{ page.meta.revision_date }}</p>
+                {% endif %}
+
+                {% if config.copyright %}
+                    <p>{{ config.copyright }}</p>
+                {% endif %}
+
+                <p><small>Some icons are from <a href="icons8.com">icons8.com</a></small></p>
+
+            </div>
+        </div>
+    </div>
+
+    {% if page %}
+    <!-- Google Yapısal Veri İşaretleme Yardımcısı tarafından oluşturulan JSON-LD işaretlemesi. -->
+    <script type="application/ld+json">
+        {
+        "@context" : "http://schema.org",
+        "@type" : "Article",
+        "author" : {
+            "@type" : "Person",
+            "name" : "{{ config.site_author }}"
+        },
+        "name" : "{{ page.title }}"
+        {% if page.meta.date %}
+        ,
+        "datePublished" : "{{ page.meta.date }}"
+        {% endif %}
+        {% if page.meta.revision_date %}
+        ,
+        "dateModified" : "{{ page.meta.revision_date}}"
+        {% endif %}
+        }
+    </script>
+    {% endif %}
+
+    </body>
+</html>
