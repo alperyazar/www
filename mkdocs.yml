@@ -23,6 +23,7 @@ plugins:
 
 theme:
   name: null
+  language: en
   logo: img/alper_yazar.png
   favicon: img/favicon.ico
   custom_dir: ayazar_theme
