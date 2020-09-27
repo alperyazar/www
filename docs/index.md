@@ -16,13 +16,13 @@ summary: Alper Yazar, Ph.D. Candidate and Electronics Engineer.
 - **Ph.D.**, Electrical and Electronics Engineering, Middle East Technical University (METU), Ankara, TURKEY, **2022 (Expected)**. CGPA: 3.75/4.00
     - Area of Study: Heterogeneous Architectures, Accelerated Clouds
     - Advisor: [Prof. Ece Güran Schmidt](http://users.metu.edu.tr/eguran)
-    - Minor Field: Telecommunication
+    - Minor Field: Telecommunications
   - **M.Sc**., Electrical and Electronics Engineering, Middle East Technical University (METU), Ankara, TURKEY, **2015**. CGPA: 3.64/4.00
     - Thesis Topic: Application of F-test Method on Model Order Selection and Related Problems. [Link](http://library.metu.edu.tr/search~S4?/cV.EE+.15-53/cv.ee+.15+53/-3%2C-1%2C0%2CE/frameset&FF=cv.ee+.15+53&1%2C1%2C)
     - Advisor: [Prof. Çağatay Candan](http://users.metu.edu.tr/ccandan)
     - Area of Study: Statistical Signal Processing
   - **B.Sc.**, Electrical and Electronics Engineering, Middle East Technical University (METU), Ankara, TURKEY, **2012**. CGPA: 3.93/4.00
-    - Specialization: Computers and Telecommunication
+    - Specialization: Computers and Telecommunications
 
 ## Patents
 
