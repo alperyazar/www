@@ -8,6 +8,5 @@ collection: projects
 entries_layout: list
 ---
 
-This page lists my projects in alphabetical order. Please visit `Projects`
-section of the [home page]({% link _pages/index.md %}) to see them in
-a logical order.
+This page lists my projects in alphabetical order. Please visit [home page]({%
+link _pages/index.md %}#projects) to see them in a logical order.
