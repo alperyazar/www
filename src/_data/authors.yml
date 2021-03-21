@@ -1,0 +1,29 @@
+# See: https://mmistakes.github.io/minimal-mistakes/docs/configuration/#site-author
+
+ayazar:
+  name: "Alper Yazar"
+  bio: "PhD candidate and electronics engineer"
+  avatar: /assets/images/bio/ayazar.png
+  links:
+    - label: "0000-0002-0904-9623"
+      icon: "fab fa-fw fa-orcid"
+      url: "https://orcid.org/0000-0002-0904-9623"
+    - label: "Alper-Yazar"
+      icon: "fab fa-fw fa-researchgate"
+      url: "https://www.researchgate.net/profile/Alper-Yazar"
+    - label: "E-7451-2019"
+      # publons icon is not available yet, this is an ugly replacement.
+      icon: "far fa-fw fa-sticky-note"
+      url: "https://publons.com/researcher/E-7451-2019/"
+    - label: "alperyazar"
+      icon: "fab fa-fw fa-linkedin"
+      url: "http://www.linkedin.com/in/alperyazar"
+    - label: "Google Scholar"
+      icon: "fab fa-fw fa-google"
+      url: "https://scholar.google.com.tr/citations?hl=tr&user=yLCD7acAAAAJ"
+    - label: "@alper_yazar"
+      icon: "fab fa-fw fa-twitter"
+      url: "https://twitter.com/alper_yazar"
+    - label: "alperyazar"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/alperyazar"

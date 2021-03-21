@@ -1,0 +1,76 @@
+name: deploy
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    # UTC Time
+    - cron: "0 6 * * 6"
+
+jobs:
+
+  deploy-jekyll-build:
+    runs-on: ubuntu-latest
+    env:
+      JEKYLL_ENV: production
+    strategy:
+      matrix:
+        python-version: ['3.6']
+        ruby-version: ['2.7']
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        persist-credentials: false
+        fetch-depth: '0'
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Set up Ruby ${{ matrix.ruby-version }}
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: ${{ matrix.ruby-version }}
+        bundler-cache: true
+    - name: Upgrade pip
+      run: |
+        python -m pip install --upgrade pip
+    - name: Install pipenv
+      run: |
+        python -m pip install pipenv
+# no need to install bundle with bundler-cache: true
+#    - name: Install Ruby dependencies
+#      run: |
+#        bundle update
+# See: https://github.com/actions/cache/blob/main/examples.md#python---pipenv
+    # - name: Cache Pipfile files if possible
+    #   uses: actions/cache@v2.1.4
+    #   with:
+    #     path: ~/.local/share/virtualenvs
+    #     key: ${{ runner.os }}-pipenv-${{ hashFiles('Pipfile.lock') }}
+    #     restore-keys: |
+    #       ${{ runner.os }}-pipenv-${{ hashFiles('Pipfile.lock') }}
+    - name: Install Python dependencies
+      run: |
+        pipenv update
+# --lsi may fail in some cases
+# see: https://github.com/jekyll/classifier-reborn/issues/64
+    - name: Build the site
+      run: |
+        bundle exec jekyll build --config _config.yml,_config-deploy.yml --lsi ||
+        bundle exec jekyll build --config _config.yml,_config-deploy.yml
+    - name: Create build-info
+      run: |
+        pipenv run python utils.py build-info
+
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@4.1.0
+      with:
+        dry-run: false
+        token: ${{ secrets.GITHUB_TOKEN }}
+        branch: gh-pages # The branch the action should deploy to.
+        folder: _site # The folder the action should deploy.
+        clean: true # Automatically remove deleted files from the deploy branch
+        single-commit: true # Like push force, keep only the last commit
+        git-config-name: alperyazar bot # Use the generic account
+        git-config-email: alperyazar@users.noreply.github.com

@@ -1,0 +1,77 @@
+# Main settings for asynx.dev
+
+title: ayazar's personal space
+name: Alper Yazar
+description: "PhD candidate and electronics engineer"
+baseurl: ""
+url: ""
+author: ayazar
+
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: neon
+source: src
+timezone: Europe/Istanbul
+search: true
+
+plugins:
+  - jekyll-feed
+  - jekyll-last-modified-at
+  - jekyll-archives
+
+include:
+  - _pages
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      toc: true
+      toc_sticky: true
+      show_date: true
+      permalink: /blog/:year/:month/:slug:output_ext
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _newsletter
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      toc: false
+
+category_archive:
+  type: jekyll-archives
+  path: /blog/categories/
+tag_archive:
+  type: jekyll-archives
+  path: /blog/tags/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /blog/categories/:name/
+    tag: /blog/tags/:name/
+
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path:output_ext
