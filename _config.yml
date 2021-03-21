@@ -8,7 +8,7 @@ url: ""
 author: ayazar
 
 theme: minimal-mistakes-jekyll
-minimal_mistakes_skin: neon
+minimal_mistakes_skin: contrast
 source: src
 timezone: Europe/Istanbul
 search: true
@@ -44,7 +44,8 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _newsletter
+      comments: false
+  # _projects
   - scope:
       path: ""
       type: projects
@@ -52,6 +53,7 @@ defaults:
       layout: single
       author_profile: true
       share: true
+      comments: true
       toc: false
 
 category_archive:

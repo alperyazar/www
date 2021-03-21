@@ -1,10 +1,6 @@
 ---
-title: "Blog 📝"
-excerpt: Tips, tutorials, guides from asynx.dev Team
+title: "Blog"
+excerpt: Personal blog of Alper Yazar
 layout: posts
 permalink: /blog/
-header:
-    overlay_image: /assets/images/blog_teaser.jpg
 ---
-
-Filter: [(🇬🇧)](/blog/tags/en) [(🇹🇷)](/blog/tags/tr)
