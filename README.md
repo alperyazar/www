@@ -3,7 +3,8 @@
 
 [![GitHub License](https://img.shields.io/github/license/alperyazar/www.svg?style=flat)](https://creativecommons.org/licenses/by-sa/4.0/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
-[![Build Status](https://travis-ci.com/alperyazar/www.svg?branch=master)](https://travis-ci.com/alperyazar/www)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/alperyazar/www/full-check?label=Full%20Check)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/alperyazar/www/deploy?label=Deploy)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/alperyazar/www.svg)](https://github.com/alperyazar/www/graphs/commit-activity)
 [![GitHub repo size in bytes](https://img.shields.io/github/repo-size/alperyazar/www.svg)](https://github.com/alperyazar/www)
 ![Uptime Robot status](https://img.shields.io/uptimerobot/status/m784066757-5d6b061dfaf9531f911b85ca.svg)
