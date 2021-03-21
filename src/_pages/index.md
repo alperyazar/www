@@ -109,18 +109,18 @@ In 2015 METU EEE Graduate Research Workshop (GRW).
 
 ## Hobby
 
-- [SSTBIOSProg](project/sstbiosprog/index.md) (completed, abandoned)
-- [İBTÇ](project/ibtc/index.md) (tamamlandı, terk edildi)
-- [Sureli2Calibre](project/sureli2calibre/index.md) (completed)
-- [aPCMeter](project/apcmeter/index.md) (completed)
-- [isoUSBRS422](project/isousbrs422/index.md) (completed)
-- [FPGA232KU](project/fpga232ku/index.md) (tamamlandı)
-- [devre.org, devreler.org](project/devre/index.md) (incomplete, old)
-- [NASuX, nasux.org](project/nasux/index.md) (incomplete, old)
-- [devrelerhakkinda.com](project/devrelerhakkinda/index.md) (eski)
-- [kapasitans.com](project/kapasitans/index.md) (incomplete, old)
-- [izoyazilim.com](project/izoyazilim/index.md) (incomplete, old)
-- [izoelektronik.com](project/izoelektronik/index.md) (eski)
+- SSTBIOSProg (completed, abandoned)
+- İBTÇ (tamamlandı, terk edildi)
+- Sureli2Calibre (completed)
+- aPCMeter (completed)
+- isoUSBRS422 (completed)
+- FPGA232KU (tamamlandı)
+- devre.org, devreler.org (incomplete, old)
+- NASuX, nasux.org (incomplete, old)
+- devrelerhakkinda.com (eski)
+- kapasitans.com (incomplete, old)
+- izoyazilim.com (incomplete, old)
+- izoelektronik.com (eski)
 
 ## Class
 
