@@ -6,6 +6,7 @@ categories:
 tags:
     - tr
     - geyik
+toc: false
 ---
 
 Habam Sınıfı'nı ne zaman dinlesem bu bölümün tam sayı çıkmama sebini düşünürüm.
