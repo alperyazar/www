@@ -1,6 +1,22 @@
-# Ubuntu 16.04.5 Üzerinde Petalinux 2018.3 Kurulumu (215-2-16258747)
+---
+title: Ubuntu 16.04.5 Üzerinde Petalinux 2018.3 Kurulumu
+excerpt: Ubuntu 16.04'e Petalinux 2018.3'ü kurarken çıkan sorunları çözüyoruz
+categories:
+    - kb
+tags:
+    - tr
+    - ubuntu
+    - linux
+    - petalinux
+    - xilinx
+uayidkb: 215-2-16258747
+toc: false
+---
 
-Yeni kurulmuş (sanal makina, VirtualBox üzerinde) petalinux 2018.3 kurarken kurduğum adımları yazacağım. Öncesinde bu bilgisayara Vivado 2018.3 kurdum, bu aşamada ek bir paket kurmadım. O yüzden olabildiğince "vanilla" bir durumu cover ettiğimi düşünüyorum.
+Yeni kurulmuş (sanal makina, VirtualBox üzerinde) petalinux 2018.3 kurarken
+kurduğum adımları yazacağım. Öncesinde bu bilgisayara Vivado 2018.3 kurdum, bu
+aşamada ek bir paket kurmadım. O yüzden olabildiğince "vanilla" bir durumu cover
+ettiğimi düşünüyorum.
 
 ```shell
 $ ./petalinux-v2018.3-final-installer.run /opt/petalinux20183/
@@ -23,7 +39,11 @@ awk: read error (Bad address)
 ERROR: Failed to extract Petalinux installer...
 ```
 
-Benzer hatayı Arch'a kurarken de almıştım. Petalinux UG1144 2018.3'te Ubuntu 16.04.3'ten bahsediliyor, ben biraz daha güncel sürümde deniyorum. Burada sanıyorum ki (bir Xilinx forum'da da görmüştüm) awk'ın çıktısının doğru değerlendirilememesi var. Fakat Arch'ta gördüğüm hata sonraki aşamalarda sanıyorum aarch64 Yocto kurulumu sırasında çıkıyordu, forumdakini bilmiyorum.
+Benzer hatayı Arch'a kurarken de almıştım. Petalinux UG1144 2018.3'te Ubuntu
+16.04.3'ten bahsediliyor, ben biraz daha güncel sürümde deniyorum. Burada
+sanıyorum ki (bir Xilinx forum'da da görmüştüm) awk'ın çıktısının doğru
+değerlendirilememesi var. Fakat Arch'ta gördüğüm hata sonraki aşamalarda
+sanıyorum aarch64 Yocto kurulumu sırasında çıkıyordu, forumdakini bilmiyorum.
 
 Daha sonra
 
@@ -31,7 +51,8 @@ Daha sonra
 $ sudo apt install gawk
 ```
 
-dediğim zaman bu hata gitti. Kurduğum paket `gawk (1:4.1.3+dfsg-0.1)` oldu. Daha sonra aldığım hata:
+dediğim zaman bu hata gitti. Kurduğum paket `gawk (1:4.1.3+dfsg-0.1)` oldu. Daha
+sonra aldığım hata:
 
 ```text
 INFO: Checking installation environment requirements...
@@ -142,13 +163,19 @@ INFO: PetaLinux SDK has been installed to /opt/petalinux20183//.
 
 Daha sonra örnek bir proje yaratıp, başarıyla derleyebildim ve QEMU ile test ettim.
 
-!!! warning
-    Örnek proje yaparken `setting.sh` source ettiğim zaman `/bin/sh`in `bash` olmadığı konusunda uyarı aldım, Ubuntu'da `dash` geliyormuş. Şimdilik bıraktım sorun yok gibi ama sıkıntı olursa bunu değiştirebilirim. Umarım bu notu ve değişiklik yaparsam burayı da düzeltmeyi unutmam.
+Örnek proje yaparken `setting.sh` source ettiğim zaman `/bin/sh`in `bash`
+olmadığı konusunda uyarı aldım, Ubuntu'da `dash` geliyormuş. Şimdilik bıraktım
+sorun yok gibi ama sıkıntı olursa bunu değiştirebilirim. Umarım bu notu ve
+değişiklik yaparsam burayı da düzeltmeyi unutmam.
+{: .notice--warning}
 
-!!! note
-    Projeyi ilk derlerken aşağıdaki uyarı çıkıyor.
-    <pre>
-    WARNING: petalinux-user-image-1.0-r0 do_rootfs: [log_check] petalinux-user-image: found 1 warning message in the logfile:
-    [log_check] warning: %post(sysvinit-inittab-2.88dsf-r10.plnx_zynq7) scriptlet failed, exit status 1
-    </pre>
-    Xilinx'e göre bu ignore edilebilir. Ref: [Link](https://www.xilinx.com/support/answers/71110.html) (Ref ZynqMP üzerine ama bence benzer durum)
+Projeyi ilk derlerken aşağıdaki uyarı çıkıyor.
+
+```text
+WARNING: petalinux-user-image-1.0-r0 do_rootfs: [log_check] petalinux-user-image: found 1 warning message in the logfile:
+[log_check] warning: %post(sysvinit-inittab-2.88dsf-r10.plnx_zynq7) scriptlet failed, exit status 1
+```
+
+Xilinx'e göre bu ignore edilebilir. Ref:
+[Link](https://www.xilinx.com/support/answers/71110.html) (Ref ZynqMP üzerine
+ama bence benzer durum)
