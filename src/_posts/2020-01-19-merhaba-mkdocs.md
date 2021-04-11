@@ -1,7 +1,12 @@
 ---
-date: 2020-01-19
+title: Merhaba MkDocs!
+excerpt: Dokuwiki'den MkDocs'a geçiş
+categories:
+    - blog
+tags:
+    - tr
+toc: false
 ---
-# Merhaba MkDocs!
 
 Web sitem için önceleri dinamik çalışan sistemlerden Wordpress ve DokuWiki'yi,
 statik site üreticilerden de Jekyll ve Sphinx'i denemiştim. Bunların arasında

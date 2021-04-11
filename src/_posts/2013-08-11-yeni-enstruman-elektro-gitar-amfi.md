@@ -1,6 +1,8 @@
 ---
 title: "Yeni Enstrüman: Elektro Gitar + Amfi"
 excerpt: "Elektro gitar ve amfi aldım!"
+categories:
+    - blog
 tags:
     - tr
     - music
@@ -34,7 +36,7 @@ olduğunu belirtiyor. Brown Sunburst ise gövde renginin kaverengi tonlarında
 olduğunu bize söylüyor.
 
 ![Squier Bullet Strat HSS Brown
-Sunburst](/assets/images/blog/13/2013-08-11-a.jpg)
+Sunburst](/assets/images/log/13/2013-08-11-a.jpg)
 
 *Squier Bullet Strat HSS Brown Sunburst*
 
@@ -77,7 +79,7 @@ tremolo kolu var. Eğer benim gibi gitarı kapalı kutudan değil de askıdan
 alıyorsanız tremoloyu da denemenizi tavsiye ederim. Gitarıma uyan tremolo
 kolunun fotoğrafını da koyuyorum.
 
-![Squier Bullet Strat Tremolo Kolu](/assets/images/blog/13/2013-08-11-b.jpg)
+![Squier Bullet Strat Tremolo Kolu](/assets/images/log/13/2013-08-11-b.jpg)
 
 *Squier Bullet Strat Tremolo Kolu*
 
@@ -98,7 +100,7 @@ sesini biraz daha "kirli" yapmak mümkün. Başta çok kullanmayacakmışım gib
 düşünsem de abartılmamış seviyede açılınca daha güzel bir ton yaratıyor gibi
 geliyor artık.
 
-![Marshall MG10CF Amfi](/assets/images/blog/13/2013-08-11-c.jpg)
+![Marshall MG10CF Amfi](/assets/images/log/13/2013-08-11-c.jpg)
 
 *Marshall MG10CF Amfi*
 
@@ -123,13 +125,13 @@ Herkese bol müzikli günler dileği ile…
 
 ![Squier Bullet Strat serisi gitarın "Headstock" kısmının arkadan görüntüsü.
 Gitarın seri numarası ve üretim yeri burada
-yazıyor.](/assets/images/blog/13/2013-08-11-d.jpg)
+yazıyor.](/assets/images/log/13/2013-08-11-d.jpg)
 
 *Squier Bullet Strat serisi gitarın "Headstock" kısmının arkadan görüntüsü.
 Gitarın seri numarası ve üretim yeri burada yazıyor.*
 
 ![Squier Bullet Strat modelli gitarın gövdesinin arkası ve arkasındaki "Çöpe
-Atmayınız!" uyarısı. ](/assets/images/blog/13/2013-08-11-e.jpg)
+Atmayınız!" uyarısı. ](/assets/images/log/13/2013-08-11-e.jpg)
 
 *Squier Bullet Strat modelli gitarın gövdesinin arkası ve arkasındaki "Çöpe
 Atmayınız!" uyarısı.*

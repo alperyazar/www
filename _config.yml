@@ -36,7 +36,7 @@ defaults:
       toc: true
       toc_sticky: true
       show_date: true
-      permalink: /blog/:year/:month/:slug:output_ext
+      permalink: /log/:year/:month/:slug:output_ext
   # _pages
   - scope:
       path: ""
@@ -58,10 +58,10 @@ defaults:
 
 category_archive:
   type: jekyll-archives
-  path: /blog/categories/
+  path: /log/categories/
 tag_archive:
   type: jekyll-archives
-  path: /blog/tags/
+  path: /log/tags/
 jekyll-archives:
   enabled:
     - categories
@@ -70,8 +70,8 @@ jekyll-archives:
     category: archive-taxonomy
     tag: archive-taxonomy
   permalinks:
-    category: /blog/categories/:name/
-    tag: /blog/tags/:name/
+    category: /log/categories/:name/
+    tag: /log/tags/:name/
 
 collections:
   projects:

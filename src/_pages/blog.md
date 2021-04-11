@@ -1,6 +1,6 @@
 ---
-title: "Blog"
-excerpt: Personal blog of Alper Yazar
+title: "Log"
+excerpt: Personal logs of Alper Yazar
 layout: posts
-permalink: /blog/
+permalink: /log/
 ---
