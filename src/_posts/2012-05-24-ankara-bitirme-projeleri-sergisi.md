@@ -1,6 +1,8 @@
 ---
 title: "Ankara Bitirme Projeleri Sergisi 29 Haziran - 1 Temmuz 2012"
 excerpt: "EMO ve ODTÜ'nün düzenlerdiği Bitirme Projeleri Sergisi'ne katılıyoruz."
+tags:
+    - tr
 toc: false
 ---
 
