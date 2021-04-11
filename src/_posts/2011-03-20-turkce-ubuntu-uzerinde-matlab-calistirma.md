@@ -12,7 +12,6 @@ uayidkb: 215-2-18288292
 toc: false
 ---
 
-
 Geçen günlerde Ubuntu 10.04 nam-ı diğer "Lucid Lynx" üzerine MATLAB R2010b
 kurdum.
 

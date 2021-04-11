@@ -5,6 +5,7 @@ categories:
     - blog
 tags:
     - tr
+    - dokuwiki
 toc: false
 ---
 
