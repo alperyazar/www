@@ -12,8 +12,6 @@ tags:
 uayidkb: 215-2-04450656
 ---
 
-Knowledge Base ID: 215-2-04450656
-
 # Symptoms
 
 Running TCL script of a **Vivado 2016.4** project on **Ubuntu 16.04 (.6) LTS**

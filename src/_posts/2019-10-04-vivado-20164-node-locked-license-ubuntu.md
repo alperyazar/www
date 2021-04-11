@@ -12,8 +12,6 @@ tags:
 uayidkb: 215-2-04650177
 ---
 
-Knowledge Base ID: 215-2-04650177
-
 # Symptoms
 
 There are two Vivado versions on my Ubuntu 16.04(.6) machine: 2016.4 and 2018.1.
