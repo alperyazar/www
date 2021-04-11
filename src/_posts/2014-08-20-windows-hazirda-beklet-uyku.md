@@ -9,7 +9,7 @@ tags:
 toc: false
 ---
 
-![Windows Seçenekleri ](/assets/images/log/14/2014-08-20-a.png)
+![Windows Seçenekleri ](/assets/images/blog/14/2014-08-20-a.png)
 
 *Windows Seçenekleri*
 
