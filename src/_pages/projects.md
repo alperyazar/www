@@ -5,6 +5,7 @@ date: 2021-03-21
 layout: collection
 permalink: /projects/
 collection: projects
+sort_by: title
 entries_layout: list
 ---
 
