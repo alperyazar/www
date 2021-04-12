@@ -5,9 +5,10 @@ date: 2021-03-21
 layout: collection
 permalink: /projects/
 collection: projects
-sort_by: title
+sort_by: date
+sort_order: reverse
 entries_layout: list
 ---
 
-This page lists my projects in alphabetical order. Please visit [home page]({%
-link _pages/index.md %}#projects) to see them in a logical order.
+This page sorts my projects by start date (newest first). Please visit [home
+page]({% link _pages/index.md %}#projects) to see them in a logical order.

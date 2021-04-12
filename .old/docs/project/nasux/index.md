@@ -1,4 +1,0 @@
-# nasux.org
-
-!!! todo
-    Yazılacak.
