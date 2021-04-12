@@ -8,6 +8,7 @@ tags:
     - fpga
     - altera
     - de0
+toc: false
 ---
 
 Elektronik malzemelerimin arasına en son katılan kartın adı Altera DE0. Kart,
