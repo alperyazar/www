@@ -57,12 +57,12 @@ jobs:
 # see: https://github.com/jekyll/classifier-reborn/issues/64
 # --lsi may take long time
     - name: Build the site (try lsi)
-      if: ${{ github.event == 'schedule' }}
+      if: ${{ github.event_name == 'schedule' }}
       run: |
         bundle exec jekyll build --config _config.yml,_config-deploy.yml --lsi ||
         bundle exec jekyll build --config _config.yml,_config-deploy.yml
     - name: Build the site (without lsi)
-      if: ${{ github.event == 'push' }}
+      if: ${{ github.event_name == 'push' }}
       run: |
         bundle exec jekyll build --config _config.yml,_config-deploy.yml
     - name: Create build-info
