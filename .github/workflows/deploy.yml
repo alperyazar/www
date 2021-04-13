@@ -55,9 +55,15 @@ jobs:
         pipenv update
 # --lsi may fail in some cases
 # see: https://github.com/jekyll/classifier-reborn/issues/64
-    - name: Build the site
+# --lsi may take long time
+    - name: Build the site (try lsi)
+      if: ${{ github.event == 'schedule' }}
       run: |
         bundle exec jekyll build --config _config.yml,_config-deploy.yml --lsi ||
+        bundle exec jekyll build --config _config.yml,_config-deploy.yml
+    - name: Build the site (without lsi)
+      if: ${{ github.event == 'push' }}
+      run: |
         bundle exec jekyll build --config _config.yml,_config-deploy.yml
     - name: Create build-info
       run: |
