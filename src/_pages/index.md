@@ -211,5 +211,4 @@ In 2015 METU EEE Graduate Research Workshop (GRW).
 
 - Trying playing various musical instruments
 
-[^1]: After successful technical examination including originality, application
-to eligible countries is cancelled due to financial issues.
+[^1]: After successful technical examination including originality, application to eligible countries is cancelled due to financial issues.

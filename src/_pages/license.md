@@ -1,18 +1,27 @@
 ---
-disqus: ''
+title: License
+excerpt: Licensed under CC-BY-4.0
+permalink: /license/
+date: 2021-04-13
 ---
 
-# License
+![Free Cultural Work](/assets/images/freecultural.png)
 
-![Free Cultural Work](img/freecultural.png)
+![CC-BY-4.0](/assets/images/ccby4_mini.png)
 
-![CC-BY-4.0](img/ccby4_mini.png)
+All materials are licensed under CC-BY-4.0 if otherwise stated. This license
+permits you to share and adapt the work if you follow license conditions. You
+don’t need to ask permission if you obey license rules.
 
-All materials are licensed under CC-BY-4.0 if otherwise stated. This license permits you to share and adapt the work if you follow license conditions. You don’t need to ask permission if you obey license rules.
+Multilingual, human readable version and summary of the license is written on
+[https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/)
+You may check the page if you have questions on the license. If you are in
+doubt, you can [Contact]({% link _pages/contact.md %}).
 
-Multilingual, human readable version and summary of the license is written on [https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/) You may check the page if you have questions on the license. If you are in doubt, you can [Contact](/contact).
-
-For the sake of completeness, full text of the license is given below as verbatim. It can be also found on [https://creativecommons.org/licenses/by/4.0/legalcode](https://creativecommons.org/licenses/by/4.0/legalcode) for many languages.
+For the sake of completeness, full text of the license is given below as
+verbatim. It can be also found on
+[https://creativecommons.org/licenses/by/4.0/legalcode](https://creativecommons.org/licenses/by/4.0/legalcode)
+for many languages.
 
 ---
 

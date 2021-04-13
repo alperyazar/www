@@ -15,3 +15,7 @@ date: 2021-03-21
 - ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/alperyazar/www/deploy?label=Deploy)
 - ![Repo Size](https://img.shields.io/github/repo-size/alperyazar/www "Repo Size")
 - ![Repo License](https://img.shields.io/github/license/alperyazar/www "Repo License")
+
+# Specimen
+
+[Specimen page]({% link _pages/specimen.md %})
