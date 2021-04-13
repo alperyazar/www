@@ -1,7 +1,7 @@
 
 # ayazar.com Source
 
-[![GitHub License](https://img.shields.io/github/license/alperyazar/www.svg?style=flat)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![GitHub License](https://img.shields.io/github/license/alperyazar/www.svg?style=flat)](https://creativecommons.org/licenses/by/4.0/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/alperyazar/www/full-check?label=Full%20Check)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/alperyazar/www/deploy?label=Deploy)
@@ -51,9 +51,9 @@ If you encounter any problem when building the site, retry by omitting
 
 ## License
 
-[![GitHub License](https://img.shields.io/github/license/alperyazar/www.svg?style=flat)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![GitHub License](https://img.shields.io/github/license/alperyazar/www.svg?style=flat)](https://creativecommons.org/licenses/by/4.0/)
 
-SPDX-License-Identifier: CC-BY-SA-4.0
+SPDX-License-Identifier: CC-BY-4.0
 
-This project is licensed under CC-BY-SA-4.0 if otherwise stated.
+This project is licensed under CC-BY-4.0 if otherwise stated.
 Check [LICENSE](LICENSE) for further information.
