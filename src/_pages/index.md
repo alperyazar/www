@@ -1,5 +1,5 @@
 ---
-title: About
+title: Alper Yazar
 permalink: /
 layout: single
 classes: wide
