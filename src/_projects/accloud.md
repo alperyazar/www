@@ -2,6 +2,10 @@
 title: ACCLOUD
 excerpt: ACCLOUD (ACcelerated CLOUD), A Novel, FPGA Accelerated Cloud Architecture
 date: 2018-04-15
+header:
+    overlay_image: /assets/images/project/accloud-header.png
+    overlay_filter: 0.5
+    teaser: /assets/images/project/accloud-promo.png
 ---
 
 ACCLOUD (ACcelerated CLOUD), "A Novel, FPGA Accelerated Cloud Architecture",

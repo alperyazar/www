@@ -7,7 +7,7 @@ permalink: /projects/
 collection: projects
 sort_by: date
 sort_order: reverse
-entries_layout: list
+entries_layout: grid
 ---
 
 This page sorts my projects by start date (newest first). Please visit [home
