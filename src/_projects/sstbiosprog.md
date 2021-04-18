@@ -11,6 +11,7 @@ header:
     overlay_image: /assets/images/project/sstbiosprog-header.png
     overlay_filter: 0.5
     teaser: /assets/images/project/sstbiosprog-promo.jpg
+aytype: hobby
 ---
 
 Status: completed, abandoned

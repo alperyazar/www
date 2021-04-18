@@ -11,6 +11,7 @@ header:
     overlay_image: /assets/images/project/ibtc-promo.jpg
     overlay_filter: 0.5
     teaser: /assets/images/project/ibtc-promo.jpg
+aytype: hobby
 ---
 
 Durum: tamamlandı, terk edildi

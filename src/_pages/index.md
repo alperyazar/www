@@ -104,23 +104,33 @@ In 2015 METU EEE Graduate Research Workshop (GRW).
 
 ## Funded
 
-- **2018-present.** Project co-manager of [ACCLOUD]({% link
-  _projects/accloud.md %})
+<!-- markdownlint-capture -->
+<!-- markdownlint-disable -->
+<div class="entries-grid">
+    {% assign entries = site.projects | sort: date %}
+    {% for post in entries reversed %}
+        {% if post.aytype == 'funded' %}
+            {% include archive-single.html type='grid' %}
+        {% endif %}
+    {% endfor %}
+</div>
+<div class="cf"></div>
+<!-- markdownlint-restore -->
 
 ## Hobby
 
-- SSTBIOSProg (completed, abandoned)
-- İBTÇ (tamamlandı, terk edildi)
-- Sureli2Calibre (completed)
-- aPCMeter (completed)
-- isoUSBRS422 (completed)
-- FPGA232KU (tamamlandı)
-- devre.org, devreler.org (incomplete, old)
-- NASuX, nasux.org (incomplete, old)
-- devrelerhakkinda.com (eski)
-- kapasitans.com (incomplete, old)
-- izoyazilim.com (incomplete, old)
-- izoelektronik.com (eski)
+<!-- markdownlint-capture -->
+<!-- markdownlint-disable -->
+<div class="entries-grid">
+    {% assign entries = site.projects | sort: date %}
+    {% for post in entries reversed %}
+        {% if post.aytype == 'hobby' %}
+            {% include archive-single.html type='grid' %}
+        {% endif %}
+    {% endfor %}
+</div>
+<div class="cf"></div>
+<!-- markdownlint-restore -->
 
 ## Class
 

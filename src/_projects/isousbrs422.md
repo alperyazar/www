@@ -11,6 +11,7 @@ header:
     overlay_image: /assets/images/project/isousbrs422-promo.jpg
     overlay_filter: 0.5
     teaser: /assets/images/project/isousbrs422-promo.jpg
+aytype: hobby
 ---
 
 isoUSBRS422 is an open source isolated USB↔RS-422/RS-485 converter board. All

@@ -1,9 +1,10 @@
 ---
-title: "kapasitans.com"
+title: "Kapasitans"
 excerpt: "Başlamadığım elektronik üzerine e-dergi projem"
 date: 2008-01-10
 tags:
     - tr
+aytype: hobby
 ---
 
 TODO: Hatırladığım kadarıyla [izoelektronik.com]({% link

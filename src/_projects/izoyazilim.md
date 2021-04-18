@@ -1,9 +1,10 @@
 ---
-title: "izoyazilim.com"
+title: "İzoYazılım"
 excerpt: "izoelektronik'e benzer mantıkla niyetlenip başlamadığım site projem"
 date: 2009-04-23
 tags:
     - tr
+aytype: hobby
 ---
 
 

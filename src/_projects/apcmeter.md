@@ -11,6 +11,7 @@ header:
     overlay_image: /assets/images/project/apcmeter-BoardFinalTest.gif
     overlay_filter: 0.5
     teaser: /assets/images/project/apcmeter-promo.jpg
+aytype: hobby
 ---
 
 This project is just for fun. It is used to monitor CPU and RAM usage of a

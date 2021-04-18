@@ -4,6 +4,7 @@ excerpt: "Sureli2Calibre: Python script to add periodicals into an existing Cali
 date: 2016-10-22
 tags:
     - en
+aytype: hobby
 ---
 
 This is an automation script written in Python 2 to add periodicals to an
