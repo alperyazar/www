@@ -8,7 +8,7 @@ tags:
     - linux
     - ubuntu
     - disket
-uayidkb: 215-2-19740315
+ayuid: 215-2-19740315
 toc: false
 ---
 

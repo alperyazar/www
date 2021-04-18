@@ -8,7 +8,7 @@ tags:
     - ubuntu
     - linux
     - matlab
-uayidkb: 215-2-18288292
+ayuid: 215-2-18288292
 toc: false
 ---
 

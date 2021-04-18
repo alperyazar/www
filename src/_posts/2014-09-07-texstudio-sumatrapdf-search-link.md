@@ -8,7 +8,7 @@ tags:
     - latex
     - texstudio
     - sumatrapdf
-uayidkb: 215-2-19969727
+ayuid: 215-2-19969727
 toc: false
 ---
 

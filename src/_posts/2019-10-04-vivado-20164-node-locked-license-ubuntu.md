@@ -9,7 +9,7 @@ tags:
     - xilinx
     - ubuntu
     - linux
-uayidkb: 215-2-04650177
+ayuid: 215-2-04650177
 ---
 
 # Symptoms

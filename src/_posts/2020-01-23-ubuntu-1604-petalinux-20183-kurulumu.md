@@ -9,7 +9,7 @@ tags:
     - linux
     - petalinux
     - xilinx
-uayidkb: 215-2-16258747
+ayuid: 215-2-16258747
 toc: false
 ---
 

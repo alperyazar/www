@@ -9,7 +9,7 @@ tags:
     - rt-205
     - modem
     - ariza
-uayidkb: 215-2-16299193
+ayuid: 215-2-16299193
 ---
 
 Bu işlemi deneyen okuyucular sadece AirTies RT-205 için değil AirTies RT-206 ve

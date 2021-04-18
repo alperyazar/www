@@ -8,7 +8,7 @@ tags:
     - microsoft
     - linux
     - grub
-uayidkb: 215-2-87940435
+ayuid: 215-2-87940435
 ---
 
 # Sorun

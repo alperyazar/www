@@ -10,7 +10,7 @@ tags:
     - windows
     - keras
     - tensorflow
-uayidkb: 215-2-10013636
+ayuid: 215-2-10013636
 ---
 
 Aşağıda yazdığım kısımlar konu ile ilgili kendime aldığım notlardır. Bir blog

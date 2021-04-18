@@ -6,7 +6,7 @@ categories:
 tags:
     - tr
     - latex
-uayidkb: 215-2-18240942
+ayuid: 215-2-18240942
 toc: false
 ---
 

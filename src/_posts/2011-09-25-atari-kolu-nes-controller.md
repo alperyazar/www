@@ -8,7 +8,7 @@ tags:
     - atari
     - nes
     - pic
-uayidkb: 215-2-13197405
+ayuid: 215-2-13197405
 ---
 
 Benim yaşımdakiler için herhalde çocukluğunda atari ile karşılaşmamış kişi pek
