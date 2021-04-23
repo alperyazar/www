@@ -74,8 +74,18 @@ classes: wide
 
 ## Poster
 
-- **Yazar, A.**, Candan, Ç. (2015, March). Model Order Selection Using F-Test.
-In 2015 METU EEE Graduate Research Workshop (GRW).
+<!-- markdownlint-capture -->
+<!-- markdownlint-disable -->
+<div class="entries-grid">
+    {% assign entries = site.publications | sort: date %}
+    {% for post in entries reversed %}
+        {% if post.aytype == 'poster' %}
+            {% include archive-single.html type='grid' %}
+        {% endif %}
+    {% endfor %}
+</div>
+<div class="cf"></div>
+<!-- markdownlint-restore -->
 
 ## Other
 
