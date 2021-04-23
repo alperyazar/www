@@ -1,12 +1,10 @@
 ---
 title: Analysis window length selection for linear signal models
-excerpt: 2015 23nd Signal Processing and Communications Applications Conference (SIU). IEEE, 2015
+excerpt: 2015 23nd Signal Processing and Communications Applications Conference (SIU). IEEE.
 date: 2015-05-16
 tags:
     - tr
-    - fpga
-    - cloud
-    - accloud
+    - f-test
 header:
     teaser: /assets/images/publication/yazar2015analysis-promo.png
 aytype: conference
@@ -16,9 +14,9 @@ aytype: conference
 
 `10.1109/SIU.2015.7130078`
 
-**YAZAR, Alper**; CANDAN, Çağatay. Analysis window length selection for linear
-signal models. In: 2015 23nd Signal Processing and Communications Applications
-Conference (SIU). IEEE, 2015. p. 1301-1304.
+**Yazar, A.**, & Candan, Ç. (2015, May). Analysis window length selection for
+linear signal models. In 2015 23nd Signal Processing and Communications
+Applications Conference (SIU) (pp. 1301-1304). IEEE.
 
 ```bibtex
 @inproceedings{yazar2015analysis,

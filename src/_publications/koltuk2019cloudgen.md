@@ -1,6 +1,6 @@
 ---
 title: "Cloudgen: Workload generation for the evaluation of cloud computing systems"
-excerpt: 2019 27th Signal Processing and Communications Applications Conference (SIU). IEEE, 2019
+excerpt: 2019 27th Signal Processing and Communications Applications Conference (SIU). IEEE.
 date: 2019-04-24
 tags:
     - tr
@@ -16,9 +16,9 @@ aytype: conference
 
 `10.1109/SIU.2019.8806358`
 
-KOLTUK, Furkan; **YAZAR, Alper**; SCHMIDT, Ece Güran. Cloudgen: Workload generation
-for the evaluation of cloud computing systems. In: 2019 27th Signal Processing
-and Communications Applications Conference (SIU). IEEE, 2019. p. 1-4.
+Koltuk, F., **Yazar, A.**, & Schmidt, E. G. (2019, April). Cloudgen: Workload
+generation for the evaluation of cloud computing systems. In 2019 27th Signal
+Processing and Communications Applications Conference (SIU) (pp. 1-4). IEEE.
 
 ```bibtex
 @inproceedings{koltuk2019cloudgen,

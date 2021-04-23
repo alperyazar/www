@@ -44,9 +44,18 @@ classes: wide
 
 ## Thesis
 
-- M.Sc. **Yazar, A.** (2015). Application Of F-Test Method On Model Order
-  Selection And Related Problems (Middle East Technical University).
-  [Link](http://library.metu.edu.tr/search~S4?/cV.EE+.15-53/cv.ee+.15+53/-3%2C-1%2C0%2CE/frameset&FF=cv.ee+.15+53&1%2C1%2C)
+<!-- markdownlint-capture -->
+<!-- markdownlint-disable -->
+<div class="entries-grid">
+    {% assign entries = site.publications | sort: date %}
+    {% for post in entries reversed %}
+        {% if post.aytype == 'thesis' %}
+            {% include archive-single.html type='grid' %}
+        {% endif %}
+    {% endfor %}
+</div>
+<div class="cf"></div>
+<!-- markdownlint-restore -->
 
 ## Conference
 

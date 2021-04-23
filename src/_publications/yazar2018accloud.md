@@ -1,6 +1,6 @@
 ---
 title: "Accloud (accelerated cloud): A novel fpga-accelerated cloud archictecture"
-excerpt: 2018 26th Signal Processing and Communications Applications Conference (SIU). IEEE, 2018
+excerpt: 2018 26th Signal Processing and Communications Applications Conference (SIU). IEEE.
 date: 2018-05-02
 tags:
     - tr
@@ -16,9 +16,9 @@ aytype: conference
 
 `10.1109/SIU.2018.8404548`
 
-**YAZAR, Alper**; EROL, Ahmet; SCHMIDT, Ece Güran. Accloud (accelerated cloud):
-A novel fpga-accelerated cloud archictecture. In: 2018 26th Signal Processing
-and Communications Applications Conference (SIU). IEEE, 2018. p. 1-4.
+**Yazar, A.**, Erol, A., & Schmidt, E. G. (2018, May). Accloud (accelerated
+cloud): A novel fpga-accelerated cloud archictecture. In 2018 26th Signal
+Processing and Communications Applications Conference (SIU) (pp. 1-4). IEEE.
 
 ```bibtex
 @inproceedings{yazar2018accloud,

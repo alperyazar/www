@@ -1,6 +1,6 @@
 ---
 title: ACCLOUD-MAN-Power Efficient Resource Allocation for Heterogeneous Clouds
-excerpt: 2019 27th Signal Processing and Communications Applications Conference (SIU). IEEE, 2019
+excerpt: 2019 27th Signal Processing and Communications Applications Conference (SIU). IEEE.
 date: 2019-04-24
 tags:
     - tr
@@ -8,6 +8,8 @@ tags:
     - cloud
     - accloud
 header:
+    overlay_image: /assets/images/publication/ekici2019accloud-promo.png
+    overlay_filter: 0.5
     teaser: /assets/images/publication/ekici2019accloud-promo.png
 aytype: conference
 ---
@@ -16,9 +18,10 @@ aytype: conference
 
 `10.1109/SIU.2019.8806247`
 
-EKICI, Nazım Umut, **et al**. ACCLOUD-MAN-Power Efficient Resource Allocation for
-Heterogeneous Clouds. In: 2019 27th Signal Processing and Communications
-Applications Conference (SIU). IEEE, 2019. p. 1-4.
+Ekici, N. U., Schmidt, K. W., **Yazar, A.**, & Schmidt, E. G. (2019, April).
+ACCLOUD-MAN-Power Efficient Resource Allocation for Heterogeneous Clouds. In
+2019 27th Signal Processing and Communications Applications Conference (SIU)
+(pp. 1-4). IEEE.
 
 ```bibtex
 @inproceedings{ekici2019accloud,

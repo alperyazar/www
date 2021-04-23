@@ -1,6 +1,6 @@
 ---
 title: Bir Açık Kaynak Kodlu Gerçek Zamanlı İşletim Sistemi (FreeRTOS) ile Gömülü Yazılım Geliştirme Çalışmaları
-excerpt: 2018 9. Savunma Teknolojileri Kongresi (SAVTEK). SAVTEK, 2018
+excerpt: 2018 9. Savunma Teknolojileri Kongresi (SAVTEK). SAVTEK.
 date: 2018-06-27
 tags:
     - tr
@@ -13,9 +13,9 @@ aytype: conference
 [Bildiri]({% link assets/dow/yazar2018freertos.pdf %})
 [Konferans Sunumu]({% link assets/dow/yazar2018freertos_sunum.pdf %})
 
-**YAZAR, Alper**. Bir Açık Kaynak Kodlu Gerçek Zamanlı İşletim Sistemi
-(FreeRTOS) ile Gömülü Yazılım Geliştirme Çalışmaları. In: 2018 9th Savunma
-Teknolojileri Kongresi (SAVTEK). SAVTEK, 2018. p. 1-8.
+**Yazar, A**. (2018). Bir Açık Kaynak Kodlu Gerçek Zamanlı İşletim Sistemi
+(FreeRTOS) ile Gömülü Yazılım Geliştirme Çalışmaları. In 2018 9th Savunma
+Teknolojileri Kongresi (SAVTEK) (pp. 1–8).
 
 ```bibtex
 @inproceedings{yazar2018freertos,

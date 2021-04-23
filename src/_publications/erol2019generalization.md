@@ -1,6 +1,6 @@
 ---
 title: A Generalization of OpenStack for Managing Heterogeneous Cloud Resources
-excerpt: 2019 27th Signal Processing and Communications Applications Conference (SIU). IEEE, 2019
+excerpt: 2019 27th Signal Processing and Communications Applications Conference (SIU). IEEE.
 date: 2019-04-24
 tags:
     - tr
@@ -8,6 +8,8 @@ tags:
     - cloud
     - accloud
 header:
+    overlay_image: /assets/images/publication/erol2019generalization-promo.png
+    overlay_filter: 0.5
     teaser: /assets/images/publication/erol2019generalization-promo.png
 aytype: conference
 ---
@@ -16,9 +18,9 @@ aytype: conference
 
 `10.1109/SIU.2019.8806551`
 
-EROL, Ahmet; **YAZAR, Alper**; SCHMIDT, Ece Güran. A Generalization of OpenStack
-for Managing Heterogeneous Cloud Resources. In: 2019 27th Signal Processing and
-Communications Applications Conference (SIU). IEEE, 2019. p. 1-4.
+Erol, A., **Yazar, A.**, & Schmidt, E. G. (2019, April). A Generalization of
+OpenStack for Managing Heterogeneous Cloud Resources. In 2019 27th Signal
+Processing and Communications Applications Conference (SIU) (pp. 1-4). IEEE.
 
 ```bibtex
 @inproceedings{erol2019generalization,
