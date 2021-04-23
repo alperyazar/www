@@ -89,10 +89,18 @@ classes: wide
 
 ## Other
 
-- **Yazar, A.** (2017) Compiled Lecture Notes of EE533 Information Theory.
-[PDF]({% link assets/dow/ee533_information_theory_alper_yazar.pdf %}).
-- **Yazar, A.** (2014) Compiled Lecture Notes of EE604 Sensor Array Signal Processing.
-[PDF]({% link assets/dow/ee604_sensor_array_signal_processing_alper_yazar.pdf%}).
+<!-- markdownlint-capture -->
+<!-- markdownlint-disable -->
+<div class="entries-grid">
+    {% assign entries = site.publications | sort: date %}
+    {% for post in entries reversed %}
+        {% if post.aytype == 'other' %}
+            {% include archive-single.html type='grid' %}
+        {% endif %}
+    {% endfor %}
+</div>
+<div class="cf"></div>
+<!-- markdownlint-restore -->
 
 # Projects
 
