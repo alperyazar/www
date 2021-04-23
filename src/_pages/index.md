@@ -63,11 +63,6 @@ classes: wide
 <div class="cf"></div>
 <!-- markdownlint-restore -->
 
-- Koltuk, F.,**Yazar, A.**, & Schmidt, E. G. (2019, April).
-  CLOUDGEN: Workload Generation for the Evaluation of Cloud Computing
-  Systems. In 2019 27th Signal Processing and Communications
-  Applications Conference (SIU) (pp. 1-4). IEEE.
-  [Link](https://doi.org/10.1109/SIU.2019.8806358)
 - Erol, A., **Yazar, A.**, & Schmidt, E. G. (2019, April). A
   Generalization of OpenStack for Managing Heterogeneous Cloud
   Resources. In 2019 27th Signal Processing and Communications

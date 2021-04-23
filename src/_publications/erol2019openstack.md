@@ -1,6 +1,6 @@
 ---
 title: OpenStack Generalization for Hardware Accelerated Clouds
-excerpt: 2019 28th International Conference on Computer Communication and Networks (ICCCN). IEEE, 2019.
+excerpt: 2019 28th International Conference on Computer Communication and Networks (ICCCN). IEEE, 2019
 date: 2019-07-29
 tags:
     - en

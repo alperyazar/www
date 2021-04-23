@@ -1,6 +1,6 @@
 ---
 title: Resource allocation for minimized power consumption in hardware accelerated clouds
-excerpt: 2019 28th International Conference on Computer Communication and Networks (ICCCN). IEEE, 2019.
+excerpt: 2019 28th International Conference on Computer Communication and Networks (ICCCN). IEEE, 2019
 date: 2019-07-29
 tags:
     - en
@@ -15,9 +15,9 @@ aytype: conference
 
 `10.1109/ICCCN.2019.8847159`
 
-EKICI, Nazim Umut, et al. Resource allocation for minimized power consumption in
-hardware accelerated clouds. In: 2019 28th International Conference on Computer
-Communication and Networks (ICCCN). IEEE, 2019. p. 1-8.
+EKICI, Nazim Umut, **et al**. Resource allocation for minimized power
+consumption in hardware accelerated clouds. In: 2019 28th International
+Conference on Computer Communication and Networks (ICCCN). IEEE, 2019. p. 1-8.
 
 ```bibtex
 @inproceedings{ekici2019resource,
