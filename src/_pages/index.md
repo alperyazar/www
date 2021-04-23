@@ -50,21 +50,19 @@ classes: wide
 
 ## Conference
 
-- Erol, A., **Yazar, A.**, & Schmidt, E. G. (2019, July). OpenStack
-  Generalization for Hardware Accelerated Clouds. In 2019 28th
-  International Conference on Computer Communication and Networks
-  (ICCCN) (pp. 1-8). IEEE.
-  [Link](https://doi.org/10.1109/ICCCN.2019.8847115)
-- Ekici, N. U., Schmidt, K. W., **Yazar, A.**, & Schmidt, E. G. (2019,
-  July). Resource Allocation for Minimized Power Consumption in
-  Hardware Accelerated Clouds. In 2019 28th International Conference
-  on Computer Communication and Networks (ICCCN) (pp. 1-8). IEEE.
-  [Link](https://doi.org/10.1109/ICCCN.2019.8847159)
-- Ekici, N. U., Schmidt, K. W., **Yazar, A.**, & Schmidt, E. G. (2019,
-  April). ACCLOUD-MAN-Power Efficient Resource Allocation for
-  Heterogeneous Clouds. In 2019 27th Signal Processing and
-  Communications Applications Conference (SIU) (pp. 1-4). IEEE.
-  [Link](https://doi.org/10.1109/SIU.2019.8806247)
+<!-- markdownlint-capture -->
+<!-- markdownlint-disable -->
+<div class="entries-grid">
+    {% assign entries = site.publications | sort: date %}
+    {% for post in entries reversed %}
+        {% if post.aytype == 'conference' %}
+            {% include archive-single.html type='grid' %}
+        {% endif %}
+    {% endfor %}
+</div>
+<div class="cf"></div>
+<!-- markdownlint-restore -->
+
 - Koltuk, F.,**Yazar, A.**, & Schmidt, E. G. (2019, April).
   CLOUDGEN: Workload Generation for the Evaluation of Cloud Computing
   Systems. In 2019 27th Signal Processing and Communications
