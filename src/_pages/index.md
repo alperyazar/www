@@ -163,11 +163,7 @@ classes: wide
     - **EE213 Electrical Circuits Laboratory.** Designed RGB color sensor using
       OPAMPs and discrete components.
 
-# Trainings
-
-## w/ Certificate
-
-### In-class
+# Trainings/Courses/Classes with Certificates
 
 - **2018.** FreeRTOS Real-Time Programming. Doulos, 3 days.
 - **2017.** Developing with Embedded Linux. Doulos, 4 days.
@@ -182,23 +178,6 @@ classes: wide
 - **2013.** C6000 Embedded Design Workshop using BIOS, Texas Instruments, 5
   days.
 
-## w/o Certificate
-
-### In-class
-
-- **2016.** Power and Analog Applications, EMPA on behalf of Texas Instruments,
-  1 day.
-- **2016.** Basics of VxWorks, ASELSAN, 5 days.
-- **2016.** Vivado HLS, PLC2, 1 day.
-- **2015.** Mentor Graphics Workshop Day, CDT, 1 day.
-- **2015.** Easy Start FPGA, PLC2, 1 day.
-- **2014.** Mentor Graphics Workshop Day, CDT, 1 day.
-
-### Online
-
- To be written...
-{: .notice--warning}
-
 # Awards and Honors
 
 - **2012-2015.** TUBITAK 2228-National MSc and PhD Scholarship Programme for
@@ -210,6 +189,17 @@ classes: wide
 - **2010.**  Bulent Kerim Altay Award. [About](http://bka.eee.metu.edu.tr/)
 - **2008.**  Bulent Kerim Altay Award. [About](http://bka.eee.metu.edu.tr/)
 - **2008-2011.** Dean’s List.
+
+# Attended Events
+
+- **2018.** Embedded World. Nürnberg, Germany.
+- **2016.** Power and Analog Applications, EMPA on behalf of Texas Instruments,
+  1 day.
+- **2016.** Basics of VxWorks, ASELSAN, 5 days.
+- **2016.** Vivado HLS, PLC2, 1 day.
+- **2015.** Mentor Graphics Workshop Day, CDT, 1 day.
+- **2015.** Easy Start FPGA, PLC2, 1 day.
+- **2014.** Mentor Graphics Workshop Day, CDT, 1 day.
 
 # Memberships
 
