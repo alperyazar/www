@@ -34,11 +34,16 @@ classes: wide
 
 # Patents
 
-- **Yazar, A.** Düşük Sızıntı Akımlı Anlık Tetik Girişli Yapılandırılabilir
-  Mandal Devresi. TR 2016 09051 B
-- **Yazar, A.** A Configurable Latch Circuit with Low Leakage Current and
-  Instant Trigger Input. PCT/TR2017/050233, WO/2018/004496 [^1]
-  [Link](https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2018004496)
+<!-- markdownlint-capture -->
+<!-- markdownlint-disable -->
+<div class="entries-grid">
+    {% assign entries = site.patents | sort: date %}
+    {% for post in entries reversed %}
+        {% include archive-single.html type='grid' %}
+    {% endfor %}
+</div>
+<div class="cf"></div>
+<!-- markdownlint-restore -->
 
 # Publications
 
@@ -212,5 +217,3 @@ classes: wide
 # Personal Activities
 
 - Trying playing various musical instruments
-
-[^1]: After successful technical examination including originality, application to eligible countries is cancelled due to financial issues.
