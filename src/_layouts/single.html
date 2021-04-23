@@ -16,12 +16,12 @@ layout: default
 
 {% assign langflag = '' %}
 
-{% if page.tags contains 'en' %}
-  {% assign langflag = '🇬🇧' %}
+{% if page.tags contains 'tr' %}
+  {% assign langflag = langflag | append:'🇹🇷' %}
 {% endif %}
 
-{% if page.tags contains 'tr' %}
-  {% assign langflag = '🇹🇷' %}
+{% if page.tags contains 'en' %}
+  {% assign langflag = langflag | append:' 🇬🇧' %}
 {% endif %}
 
 <div id="main" role="main">

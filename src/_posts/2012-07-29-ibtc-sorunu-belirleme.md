@@ -4,7 +4,7 @@ excerpt: "İlk önce bilgisayardaki sorunu bulmaya çalışıyorum."
 categories:
     - project
 tags:
-    - en
+    - tr
     - ibtc
 toc: false
 ---

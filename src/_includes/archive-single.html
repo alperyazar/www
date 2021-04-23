@@ -12,12 +12,12 @@
 
 {% assign langflag = '' %}
 
-{% if post.tags contains 'en' %}
-  {% assign langflag = '🇬🇧' %}
+{% if post.tags contains 'tr' %}
+  {% assign langflag = langflag | append:'🇹🇷' %}
 {% endif %}
 
-{% if post.tags contains 'tr' %}
-  {% assign langflag = '🇹🇷' %}
+{% if post.tags contains 'en' %}
+  {% assign langflag = langflag | append:' 🇬🇧' %}
 {% endif %}
 
 <div class="{{ include.type | default: 'list' }}__item">

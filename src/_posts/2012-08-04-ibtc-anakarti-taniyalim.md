@@ -4,7 +4,7 @@ excerpt: "BIOS kaynaklı olduğunu düşündüğüm sorunu çözmek için ilk ö
 categories:
     - project
 tags:
-    - en
+    - tr
     - ibtc
 toc: true
 ---

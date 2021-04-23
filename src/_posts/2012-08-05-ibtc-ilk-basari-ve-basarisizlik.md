@@ -4,7 +4,7 @@ excerpt: "Tam da oldu çalışacak derken, yine en başa döndüm."
 categories:
     - project
 tags:
-    - en
+    - tr
     - ibtc
 toc: false
 ---
