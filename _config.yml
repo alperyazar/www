@@ -8,7 +8,7 @@ url: ""
 author: ayazar
 
 theme: minimal-mistakes-jekyll
-minimal_mistakes_skin: contrast
+minimal_mistakes_skin: dirt
 source: src
 timezone: Europe/Istanbul
 search: true
