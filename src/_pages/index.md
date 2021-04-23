@@ -66,10 +66,6 @@ classes: wide
 - **Yazar, A.** (2018, June). Bir Açık Kaynak Kodlu Gerçek Zamanlı
   İşletim Sistemi (FreeRTOS) ile Gömülü Yazılım Geliştirme
   Çalışmaları. In 2018 9th Savunma Teknolojileri Kongresi (SAVTEK).
-- **Yazar, A.**, Candan, Ç. (2015, May). Analysis window length
-selection for linear signal models. In 2015 23nd Signal Processing
-and Communications Applications Conference (SIU) (pp. 1301-1304).
-IEEE. [Link](https://doi.org/10.1109/SIU.2015.7130078)
 
 ## Poster
 
