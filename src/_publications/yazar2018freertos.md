@@ -6,6 +6,8 @@ tags:
     - tr
     - freertos
 header:
+    overlay_image: /assets/images/publication/yazar2018freertos-promo.png
+    overlay_filter: 0.5
     teaser: /assets/images/publication/yazar2018freertos-promo.png
 aytype: conference
 ---

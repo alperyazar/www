@@ -6,6 +6,8 @@ tags:
     - tr
     - f-test
 header:
+    overlay_image: /assets/images/publication/yazar2015analysis-promo.png
+    overlay_filter: 0.5
     teaser: /assets/images/publication/yazar2015analysis-promo.png
 aytype: conference
 ---

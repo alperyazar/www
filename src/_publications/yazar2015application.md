@@ -7,6 +7,8 @@ tags:
     - f-test
     - thesis
 header:
+    overlay_image: /assets/images/publication/yazar2015application-promo.png
+    overlay_filter: 0.5
     teaser: /assets/images/publication/yazar2015application-promo.png
 aytype: thesis
 ---

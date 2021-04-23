@@ -8,6 +8,8 @@ tags:
     - cloud
     - accloud
 header:
+    overlay_image: /assets/images/publication/koltuk2019cloudgen-promo.png
+    overlay_filter: 0.5
     teaser: /assets/images/publication/koltuk2019cloudgen-promo.png
 aytype: conference
 ---

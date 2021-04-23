@@ -8,6 +8,8 @@ tags:
     - cloud
     - accloud
 header:
+    overlay_image: /assets/images/publication/yazar2018accloud-promo.png
+    overlay_filter: 0.5
     teaser: /assets/images/publication/yazar2018accloud-promo.png
 aytype: conference
 ---

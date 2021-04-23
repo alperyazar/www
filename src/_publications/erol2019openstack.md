@@ -8,6 +8,8 @@ tags:
     - cloud
     - accloud
 header:
+    overlay_image: /assets/images/publication/erol2019openstack-promo.png
+    overlay_filter: 0.5
     teaser: /assets/images/publication/erol2019openstack-promo.png
 aytype: conference
 ---
