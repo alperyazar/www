@@ -6,6 +6,7 @@ tags:
     - tr
     - resource-allocation
     - cloud
+    - accloud
 header:
     teaser: /assets/images/publication/ekici2019accloud-promo.png
 aytype: conference

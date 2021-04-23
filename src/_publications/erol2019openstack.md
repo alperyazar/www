@@ -6,6 +6,7 @@ tags:
     - en
     - openstack
     - cloud
+    - accloud
 header:
     teaser: /assets/images/publication/erol2019openstack-promo.png
 aytype: conference

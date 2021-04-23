@@ -6,6 +6,7 @@ tags:
     - tr
     - workload
     - cloud
+    - accloud
 header:
     teaser: /assets/images/publication/koltuk2019cloudgen-promo.png
 aytype: conference
