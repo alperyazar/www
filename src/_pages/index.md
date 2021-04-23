@@ -63,10 +63,6 @@ classes: wide
 <div class="cf"></div>
 <!-- markdownlint-restore -->
 
-- **Yazar, A.** (2018, June). Bir Açık Kaynak Kodlu Gerçek Zamanlı
-  İşletim Sistemi (FreeRTOS) ile Gömülü Yazılım Geliştirme
-  Çalışmaları. In 2018 9th Savunma Teknolojileri Kongresi (SAVTEK).
-
 ## Poster
 
 - **Yazar, A.**, Candan, Ç. (2015, March). Model Order Selection Using F-Test.
