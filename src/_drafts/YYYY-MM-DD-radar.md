@@ -1,5 +1,5 @@
 ---
-title: "RADAR YYYY/WW"
+title: "RADAR YYYY-W##"
 excerpt: "Things I came across/Denk geldiklerim"
 categories:
     - radar
