@@ -8,6 +8,7 @@
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/alperyazar/www.svg)](https://github.com/alperyazar/www/graphs/commit-activity)
 [![GitHub repo size in bytes](https://img.shields.io/github/repo-size/alperyazar/www.svg)](https://github.com/alperyazar/www)
 ![Uptime Robot status](https://img.shields.io/uptimerobot/status/m784066757-5d6b061dfaf9531f911b85ca.svg)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/338d0494-8489-459d-81da-1a5cca25848f/deploy-status)](https://app.netlify.com/sites/draft-ayazar/deploys)
 ![Uptime Robot ratio (30 days)](https://img.shields.io/uptimerobot/ratio/m784066757-5d6b061dfaf9531f911b85ca.svg)
 
 [https://www.ayazar.com](https://www.ayazar.com)
