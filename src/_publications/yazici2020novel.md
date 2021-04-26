@@ -4,9 +4,6 @@ excerpt: 2020 IEEE 9th International Conference on Cloud Networking (CloudNet). 
 date: 2020-11-09
 tags:
     - en
-    - noc
-    - cloud
-    - accloud
 header:
     overlay_image: /assets/images/publication/yazici2020novel-promo.png
     overlay_filter: 0.5

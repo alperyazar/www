@@ -12,9 +12,10 @@ toc: true
 
 [As I mentioned earlier]({% post_url
 2015-01-13-my-dirty-isousbrs422-boards-arrived %}) for my first open source
-project called [isoUSBRS422](index.md), I ordered PCBs from
-[dirtypcbs.com](https://dirtypcbs.com). They arrived in January. I took some
-photos using USB microscope.
+project called [isoUSBRS422]({% link
+_projects/isousbrs422.md %}), I ordered
+PCBs from [dirtypcbs.com](https://dirtypcbs.com). They arrived in January. I
+took some photos using USB microscope.
 
 Boards are dirty. Especially, soldermask layers aren't perfect. My first
 prototype is work as I expected. So they should be fine in terms of electrical

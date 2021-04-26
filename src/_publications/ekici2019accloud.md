@@ -4,9 +4,6 @@ excerpt: 2019 27th Signal Processing and Communications Applications Conference 
 date: 2019-04-24
 tags:
     - tr
-    - resource-allocation
-    - cloud
-    - accloud
 header:
     overlay_image: /assets/images/publication/ekici2019accloud-promo.png
     overlay_filter: 0.5

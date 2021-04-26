@@ -4,9 +4,6 @@ excerpt: 2020 28th Signal Processing and Communications Applications Conference 
 date: 2020-10-05
 tags:
     - tr
-    - noc
-    - cloud
-    - accloud
 header:
     overlay_image: /assets/images/publication/yazici2020onchip-promo.png
     overlay_filter: 0.5

@@ -4,9 +4,6 @@ excerpt: 2019 28th International Conference on Computer Communication and Networ
 date: 2019-07-29
 tags:
     - en
-    - openstack
-    - cloud
-    - accloud
 header:
     overlay_image: /assets/images/publication/erol2019openstack-promo.png
     overlay_filter: 0.5

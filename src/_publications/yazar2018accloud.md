@@ -4,9 +4,6 @@ excerpt: 2018 26th Signal Processing and Communications Applications Conference 
 date: 2018-05-02
 tags:
     - tr
-    - fpga
-    - cloud
-    - accloud
 header:
     overlay_image: /assets/images/publication/yazar2018accloud-promo.png
     overlay_filter: 0.5

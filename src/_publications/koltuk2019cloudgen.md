@@ -4,9 +4,6 @@ excerpt: 2019 27th Signal Processing and Communications Applications Conference 
 date: 2019-04-24
 tags:
     - tr
-    - workload
-    - cloud
-    - accloud
 header:
     overlay_image: /assets/images/publication/koltuk2019cloudgen-promo.png
     overlay_filter: 0.5
