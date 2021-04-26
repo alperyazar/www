@@ -4,8 +4,6 @@ excerpt: ACCLOUD (ACcelerated CLOUD), A Novel, FPGA Accelerated Cloud Architectu
 date: 2018-04-15
 tags:
     - en
-    - cloud
-    - accloud
 header:
     overlay_image: /assets/images/project/accloud-header.png
     overlay_filter: 0.5

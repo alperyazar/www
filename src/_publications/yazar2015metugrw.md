@@ -4,7 +4,6 @@ excerpt: 2015 METU EEE Graduate Research Workshop (GRW). METU.
 date: 2015-03-05
 tags:
     - en
-    - f-test
 header:
     overlay_image: /assets/images/publication/yazar2015metugrw-promo.png
     overlay_filter: 0.5

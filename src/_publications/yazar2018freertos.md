@@ -4,7 +4,6 @@ excerpt: 2018 9. Savunma Teknolojileri Kongresi (SAVTEK). SAVTEK.
 date: 2018-06-27
 tags:
     - tr
-    - freertos
 header:
     overlay_image: /assets/images/publication/yazar2018freertos-promo.png
     overlay_filter: 0.5

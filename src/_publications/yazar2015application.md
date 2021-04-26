@@ -4,8 +4,6 @@ excerpt: 2015 Master's thesis.
 date: 2015-08-26
 tags:
     - en
-    - f-test
-    - thesis
 header:
     overlay_image: /assets/images/publication/yazar2015application-promo.png
     overlay_filter: 0.5
