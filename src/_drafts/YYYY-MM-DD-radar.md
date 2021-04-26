@@ -9,7 +9,10 @@ tags:
 toc: false
 ---
 
+Taslak/Draft
+{: .notice--danger}
+
 [YYYY-MM-DD YYYY-MM-DD]
 
-* (🇬🇧) New.
-* (🇹🇷) Gelişme.
+* 🇬🇧 New.
+* 🇹🇷 Gelişme.
