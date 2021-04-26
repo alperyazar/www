@@ -5,8 +5,8 @@ on:
     branches:
       - master
   schedule:
-    # Every monday 16:19 UTC
-    - cron: "19 16 * * 0"
+    # Every saturday 06:00 UTC
+    - cron: "0 6 * * 6"
 
 jobs:
 
