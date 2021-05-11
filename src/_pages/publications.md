@@ -10,5 +10,6 @@ sort_order: reverse
 entries_layout: grid
 ---
 
-This page sorts my publications by start date (newest first). Please visit [home
-page]({% link _pages/index.md %}#publications) to see them in a logical order.
+This page sorts my publications by publication date (newest first). Please visit
+[CV page]({% link _pages/cv.md %}#publications) to see them in a logical
+order.

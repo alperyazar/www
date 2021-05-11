@@ -1,219 +1,41 @@
 ---
-title: Alper Yazar
+title: Hi, I am Alper!
 permalink: /
 layout: single
 classes: wide
 ---
 
-# Professional Experience
+I am a [full-time]({% link _pages/cv.md%}#professional-experience)
+**E**lectrical and **E**lectronics **E**ngineer, PhD candidate at
+[METU](https://www.metu.edu.tr/) [EEE](https://eee.metu.edu.tr/) and project
+co-manager of [ACCLOUD]({% link
+_projects/accloud.md %}) (Accelerated Cloud)
+project and I live in
+[Ankara](https://en.wikipedia.org/wiki/Ankara)/[TURKEY](https://en.wikipedia.org/wiki/Turkey).
 
-- **Project Co-manager.** [ACCLOUD]({% link _projects/accloud.md %}), **April
-  2018 to present.**
-- **Electronics Engineer.** ASELSAN, Ankara, TURKEY, **August 2012 to
-  present.**
-- **Intern.** ASELSAN, Ankara, TURKEY, **June 2011 to July 2011.**
-- **Intern.** Bosch Rexroth, Bursa, TURKEY, **June 2010 to July 2010.**
+I got my BSc and MSc degrees from the same department,
+[METU](https://www.metu.edu.tr/) [EEE](https://eee.metu.edu.tr/), in 2012 and
+2015, respectively. My [master's thesis]({% link
+_publications/yazar2015application.md %}) was about statistical signal
+processing. Now, I am working on FPGA accelerated cloud computing as a PhD
+candidate. At work, most of the time I work on FPGA/embedded related stuffs. I
+am also experienced in analog/digital circuit and PCB design.
 
-# Education
+I love spending my time on electronics and computers since I was 10. I like
+doing [projects]({% link _pages/cv.md%}#projects), reading blogs/projects/codes,
+watching videos and [attending courses/webinars]({% link
+_pages/cv.md%}#attended-trainings), [publishing papers]({% link
+_pages/cv.md%}#publications) and doing other geeky
+things. I am a big fan of free and open source projects and initiatives 🐧.
+Besides, I like music and musical instruments 🎵.
 
-- **Ph.D.**, Electrical and Electronics Engineering, Middle East Technical
-  University (METU), Ankara, TURKEY, **2023 (Expected)**. CGPA: 3.75/4.00
-    - Area of Study: Heterogeneous Architectures, Accelerated Clouds
-    - Advisor: [Prof. Ece Güran Schmidt](http://users.metu.edu.tr/eguran)
-    - Minor Field: Telecommunications
-- **M.Sc**., Electrical and Electronics Engineering, Middle East Technical
-  University (METU), Ankara, TURKEY, **2015**. CGPA: 3.64/4.00
-    - Thesis Topic: Application of F-test Method on Model Order Selection and
-      Related Problems.
-      [Link](http://library.metu.edu.tr/search~S4?/cV.EE+.15-53/cv.ee+.15+53/-3%2C-1%2C0%2CE/frameset&FF=cv.ee+.15+53&1%2C1%2C)
-    - Advisor: [Prof. Çağatay Candan](http://users.metu.edu.tr/ccandan)
-    - Area of Study: Statistical Signal Processing
-- **B.Sc.**, Electrical and Electronics Engineering, Middle East Technical
-  University (METU), Ankara, TURKEY, **2012**. CGPA: 3.93/4.00
-    - Specialization: Computers and Telecommunications
+This is my personal site and you can view [my CV]({% link _pages/cv.md%}), read
+[my posts](/log) or [contact me]({% link
+_pages/contact.md %}) if you wish. The
+content is organized in [Collections 📚]({% link _pages/collections.md%}) page.
+The site is bilingual and flags (🇬🇧, 🇹🇷) denote language of the content.
 
-# Patents
+I hope you will find some useful content on this site.
 
-<!-- markdownlint-capture -->
-<!-- markdownlint-disable -->
-<div class="entries-grid">
-    {% assign entries = site.patents | sort: date %}
-    {% for post in entries reversed %}
-        {% include archive-single.html type='grid' %}
-    {% endfor %}
-</div>
-<div class="cf"></div>
-<!-- markdownlint-restore -->
-
-# Publications
-
-## Thesis
-
-<!-- markdownlint-capture -->
-<!-- markdownlint-disable -->
-<div class="entries-grid">
-    {% assign entries = site.publications | sort: date %}
-    {% for post in entries reversed %}
-        {% if post.aytype == 'thesis' %}
-            {% include archive-single.html type='grid' %}
-        {% endif %}
-    {% endfor %}
-</div>
-<div class="cf"></div>
-<!-- markdownlint-restore -->
-
-## Conference
-
-<!-- markdownlint-capture -->
-<!-- markdownlint-disable -->
-<div class="entries-grid">
-    {% assign entries = site.publications | sort: date %}
-    {% for post in entries reversed %}
-        {% if post.aytype == 'conference' %}
-            {% include archive-single.html type='grid' %}
-        {% endif %}
-    {% endfor %}
-</div>
-<div class="cf"></div>
-<!-- markdownlint-restore -->
-
-## Poster
-
-<!-- markdownlint-capture -->
-<!-- markdownlint-disable -->
-<div class="entries-grid">
-    {% assign entries = site.publications | sort: date %}
-    {% for post in entries reversed %}
-        {% if post.aytype == 'poster' %}
-            {% include archive-single.html type='grid' %}
-        {% endif %}
-    {% endfor %}
-</div>
-<div class="cf"></div>
-<!-- markdownlint-restore -->
-
-## Other
-
-<!-- markdownlint-capture -->
-<!-- markdownlint-disable -->
-<div class="entries-grid">
-    {% assign entries = site.publications | sort: date %}
-    {% for post in entries reversed %}
-        {% if post.aytype == 'other' %}
-            {% include archive-single.html type='grid' %}
-        {% endif %}
-    {% endfor %}
-</div>
-<div class="cf"></div>
-<!-- markdownlint-restore -->
-
-# Projects
-
-## Funded
-
-<!-- markdownlint-capture -->
-<!-- markdownlint-disable -->
-<div class="entries-grid">
-    {% assign entries = site.projects | sort: date %}
-    {% for post in entries reversed %}
-        {% if post.aytype == 'funded' %}
-            {% include archive-single.html type='grid' %}
-        {% endif %}
-    {% endfor %}
-</div>
-<div class="cf"></div>
-<!-- markdownlint-restore -->
-
-## Hobby
-
-<!-- markdownlint-capture -->
-<!-- markdownlint-disable -->
-<div class="entries-grid">
-    {% assign entries = site.projects | sort: date %}
-    {% for post in entries reversed %}
-        {% if post.aytype == 'hobby' %}
-            {% include archive-single.html type='grid' %}
-        {% endif %}
-    {% endfor %}
-</div>
-<div class="cf"></div>
-<!-- markdownlint-restore -->
-
-## Class
-
-- **Ph.D.**, METU
-    - **EE542 Computer Networks.** Evaluation and minor improvements on
-      ClassBench
-    - **CENG513 Wireless Communication and Networks.**  A load balancing
-      algorithm for multi-user multiple access point wireless networks
-- **M.Sc.**, METU
-    - **EE604 Sensor Array Signal Processing.** Implementation and evaluation
-      of two source localization methods on MATLAB: Triangulation and RSS
-- **B.Sc.**, METU
-    - **EE493, EE494 Engineering Design.**  Being a member of a team with four
-      members, designed a voice controlled car capable of auto collision
-      avoidance. Speech processing was done using MATLAB on a PC. Commands were
-      transferred to car over RF channel. An RF communication protocol was
-      developed top on FSK modulation.
-    - **EE430 Digital Signal Processing.** Designed and implemented FSK based
-      communication system over acoustic air channel using MATLAB and standard
-      microphone/speaker of a PC.
-    - **EE314 Digital Electronics Laboratory.** Designed clone of "Space
-      Invaders" game on FPGA board with VGA output using Verilog as HDL an
-      XilinX ISE tools.
-    - **EE313 Analog Electronics Laboratory.** Designed an op-amp using discrete
-      transistors and passives.
-    - **EE214 Electronic Circuits Laboratory.** Designed a DC-DC boost
-      converter using discrete components.
-    - **EE213 Electrical Circuits Laboratory.** Designed RGB color sensor using
-      OPAMPs and discrete components.
-
-# Trainings/Courses/Classes with Certificates
-
-- **2018.** FreeRTOS Real-Time Programming. Doulos, 3 days.
-- **2017.** Developing with Embedded Linux. Doulos, 4 days.
-- **2016.** The Programmable Logic Training Course Professional ZYNQ. PLC2, 5
-  days.
-- **2016.** The Programmable Logic Training Course Professional VHDL. PLC2, 5
-  days.
-- **2014.** Mentor Graphics DxDesigner Training Course. CDT on behalf of Mentor
-  Graphics, 2.5 days.
-- **2014.** EMC Seminar. Würth Elektronik GmbH, 1 day.
-- **2014.** Power Seminar. Linear Technology, 1 day.
-- **2013.** C6000 Embedded Design Workshop using BIOS, Texas Instruments, 5
-  days.
-
-# Awards and Honors
-
-- **2012-2015.** TUBITAK 2228-National MSc and PhD Scholarship Programme for
-  Senior Undergraduate Students
-- **2011.** Capstone Design Project Honorable Mention Award
-- **2011.**  Bulent Kerim Altay Award. [About](http://bka.eee.metu.edu.tr/)
-- **2011.**  Bulent Kerim Altay Award. [About](http://bka.eee.metu.edu.tr/)
-- **2010.**  Bulent Kerim Altay Award. [About](http://bka.eee.metu.edu.tr/)
-- **2010.**  Bulent Kerim Altay Award. [About](http://bka.eee.metu.edu.tr/)
-- **2008.**  Bulent Kerim Altay Award. [About](http://bka.eee.metu.edu.tr/)
-- **2008-2011.** Dean’s List.
-
-# Attended Events
-
-- **2018.** Embedded World. Nürnberg, Germany.
-- **2016.** Power and Analog Applications, EMPA on behalf of Texas Instruments,
-  1 day.
-- **2016.** Basics of VxWorks, ASELSAN, 5 days.
-- **2016.** Vivado HLS, PLC2, 1 day.
-- **2015.** Mentor Graphics Workshop Day, CDT, 1 day.
-- **2015.** Easy Start FPGA, PLC2, 1 day.
-- **2014.** Mentor Graphics Workshop Day, CDT, 1 day.
-
-# Memberships
-
-- **Past.** IEEE
-- **Past.** IEEE Robotics and Automation Society
-- **Past.** IEEE Signal Processing Society
-- **Past.** [IEEE ODTÜ](http://www.ieee.metu.edu.tr)
-- **Past.** [ODTÜ KTMT](https://www.odtuktmt.com/)
-
-# Personal Activities
-
-- Trying playing various musical instruments
+(🇹🇷) Bu sayfanın Türkçe'si de [mevcut.]({% link _pages/tr/merhaba.md %})
+{: .notice--info}
