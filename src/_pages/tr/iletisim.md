@@ -9,7 +9,10 @@ date: 2021-03-21
 
 Açık sorulabilecek sorularınız, site ile ilgili sorularınız veya site içeriği
 ile ilgili düzeltme önerileriniz için lütfen [GitHub
-issue](https://github.com/alperyazar/www/issues) üzerinde bir talep oluşturunuz.
+Discussions](https://github.com/alperyazar/www/discussions) üzerinde bir talep
+oluşturunuz. İçerikle ilgili düzeltmelerinizi yapabiliyorsanız [Pull
+Request](https://github.com/alperyazar/www/pulls) oluşturarak da bana
+iletebilirsiniz.
 
 Diğer durumlarda lütfen e-posta gönderiniz:
 

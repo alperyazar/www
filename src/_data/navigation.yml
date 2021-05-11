@@ -1,11 +1,11 @@
 main:
-  - title: "About"
+  - title: "Hi 👋"
     url: /
-  - title: "Log"
-    url: /log/
-  - title: "Projects"
-    url: /#projects
-  - title: "Publications"
-    url: /#publications
-  - title: "Contact"
+  - title: "CV 🖋️"
+    url: /cv/
+  - title: "Collections 📚"
+    url: /collections/
+  - title: "Contact 🇬🇧"
     url: /contact/
+  - title: "İletişim 🇹🇷"
+    url: /tr/iletisim/
