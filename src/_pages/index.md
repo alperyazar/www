@@ -39,3 +39,16 @@ I hope you will find some useful content on this site.
 
 (🇹🇷) Bu sayfanın Türkçe'si de [mevcut.]({% link _pages/tr/merhaba.md %})
 {: .notice--info}
+
+# Most Recent Posts
+
+<!-- markdownlint-capture -->
+<!-- markdownlint-disable -->
+<div class="entries-grid">
+    {% assign entries = site.posts | sort: 'date' | reverse %}
+    {% for post in entries limit:4 %}
+        {% include archive-single.html type='grid' %}
+    {% endfor %}
+</div>
+<div class="cf"></div>
+<!-- markdownlint-restore -->

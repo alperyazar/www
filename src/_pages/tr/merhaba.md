@@ -41,3 +41,16 @@ Umarım sitemde işinize de yarayacak içerikler bulabilirsiniz.
 
 (🇬🇧) This page is available in [English.]({% link _pages/index.md %})
 {: .notice--info}
+
+# Son Yazılar
+
+<!-- markdownlint-capture -->
+<!-- markdownlint-disable -->
+<div class="entries-grid">
+    {% assign entries = site.posts | sort: 'date' | reverse %}
+    {% for post in entries limit:4 %}
+        {% include archive-single.html type='grid' %}
+    {% endfor %}
+</div>
+<div class="cf"></div>
+<!-- markdownlint-restore -->

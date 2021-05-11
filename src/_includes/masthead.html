@@ -38,4 +38,21 @@
 
 
 <!--<div><center><p class="notice--success"><strong>Announcement:</strong> ...</p></center></div>-->
+<div><center><p class="notice--primary"><strong>Latest Post:</strong>
+    {% assign entries = site.posts | sort: 'date' | reverse %}
+    {% for post in entries limit:1 %}
+
+    {% assign langflag = '' %}
+
+    {% if post.tags contains 'tr' %}
+    {% assign langflag = langflag | append:'🇹🇷' %}
+    {% endif %}
+
+    {% if post.tags contains 'en' %}
+    {% assign langflag = langflag | append:' 🇬🇧' %}
+    {% endif %}
+
+    {{ langflag }} <a href="{{ post.url | relative_url }}" rel="permalink">{{ post.title }}</a>
+    {% endfor %}
+</p></center></div>
 
