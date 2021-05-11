@@ -5,8 +5,9 @@ on:
     branches:
       - master
   schedule:
-    # Every saturday 06:00 UTC
-    - cron: "0 6 * * 6"
+    # RADAR posts published on mondays and cron build runs LSI.
+    # Every monday 12:00 UTC
+    - cron: "0 12 * * 1"
 
 jobs:
 
