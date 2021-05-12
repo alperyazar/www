@@ -27,3 +27,5 @@ Site content is categorized here.
   projects pages but you can [see all of them](/log/categories/project) if you wish.
 * **All posts** (including RADAR, Blog, KB, Review, etc.) can be accessed from
   [here](/log).
+* **Awesome** list where I collect my personal favorite items. [Link]({% link
+  _pages/awesome.md %})

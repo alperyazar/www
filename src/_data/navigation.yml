@@ -5,6 +5,8 @@ main:
     url: /cv/
   - title: "Collections 📚"
     url: /collections/
+  - title: "Awesome 🕶️"
+    url: /awesome/
   - title: "Contact 🇬🇧"
     url: /contact/
   - title: "İletişim 🇹🇷"
