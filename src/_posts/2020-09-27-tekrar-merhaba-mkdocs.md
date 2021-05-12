@@ -6,6 +6,8 @@ categories:
 tags:
     - tr
     - mkdocs
+header:
+    teaser: /assets/images/blog/20/2020-09-27-mkdocs-promo.png
 toc: false
 ---
 

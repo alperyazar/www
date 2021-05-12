@@ -6,6 +6,10 @@ categories:
 tags:
     - tr
     - jekyll
+header:
+    overlay_image: /assets/images/blog/21/2021-03-21-jekyll-promo.png
+    overlay_filter: 0.5
+    teaser: /assets/images/blog/21/2021-03-21-jekyll-promo.png
 toc: true
 ---
 

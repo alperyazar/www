@@ -46,11 +46,10 @@ Umarım sitemde işinize de yarayacak içerikler bulabilirsiniz.
 
 <!-- markdownlint-capture -->
 <!-- markdownlint-disable -->
-<div class="entries-grid">
+<div class="grid__wrapper">
     {% assign entries = site.posts | sort: 'date' | reverse %}
     {% for post in entries limit:4 %}
         {% include archive-single.html type='grid' %}
     {% endfor %}
 </div>
-<div class="cf"></div>
 <!-- markdownlint-restore -->

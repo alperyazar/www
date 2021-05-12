@@ -6,6 +6,10 @@ categories:
 tags:
     - en
     - tr
+header:
+    overlay_image: /assets/images/radar/radar-promo.png
+    overlay_filter: 0.5
+    teaser: /assets/images/radar/radar-promo.png
 toc: false
 ---
 

@@ -6,6 +6,8 @@ categories:
 tags:
     - tr
     - dokuwiki
+header:
+    teaser: /assets/images/blog/20/2020-04-11-dokuwiki-promo.png
 toc: false
 ---
 
