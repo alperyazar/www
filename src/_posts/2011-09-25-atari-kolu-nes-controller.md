@@ -295,6 +295,6 @@ Bu kodun çalışması şu videodaki gibi olmaktadır:
 
 # Kaynaklar
 
-* [http://www.mit.edu/~tarvizo/nes-controller.html](http://www.mit.edu/~tarvizo/nes-controller.html)
+* `http://www.mit.edu/~tarvizo/nes-controller.html` `404 🔗`
 * [http://www.gamesx.com/controldata/nessnes.htm](http://www.gamesx.com/controldata/nessnes.htm)
 * [http://davr.org/snes/joystick.txt](http://davr.org/snes/joystick.txt)

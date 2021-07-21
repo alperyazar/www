@@ -52,7 +52,7 @@ LUKS" var, ona dikkat etmem gerekir mi?
 
 Ref:
 
-* [https://askubuntu.com/questions/1098221/windows-10-update-grub-rescue](https://askubuntu.com/questions/1098221/windows-10-update-grub-rescue)
+* `https://askubuntu.com/questions/1098221/windows-10-update-grub-rescue` `404`
 * [https://help.ubuntu.com/community/RecoveringUbuntuAfterInstallingWindows](https://help.ubuntu.com/community/RecoveringUbuntuAfterInstallingWindows)
 * [https://help.ubuntu.com/community/Boot-Repair](https://help.ubuntu.com/community/Boot-Repair)
 

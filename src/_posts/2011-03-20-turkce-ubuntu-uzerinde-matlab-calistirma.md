@@ -47,11 +47,11 @@ Yukarıdaki kodu çalıştırdıktan sonra şu cümleyle başlayan hatalar aldı
 ```
 
 Grafik çizilse bile, yakınlaşma gibi düğmeler çalışmamaktaydı. Biraz araştırma
-yaptıktan sonra
-[şu](http://www.mathworks.com/matlabcentral/newsreader/view_thread/288923)
-sayfayı buldum. Kişilerden biri, bunun MATLAB 2010a'nın Türkçe LINUX işletim
-sistemi üzerinde çalışması sonucu olan bir **bug** olduğunu düşünüyor. Önerdiği
-çözüm ise oldukça basit:
+yaptıktan sonra şu
+(`http://www.mathworks.com/matlabcentral/newsreader/view_thread/288923` `404🔗`)
+sayfayı buldum. Kişilerden biri, bunun MATLAB 2010a'nın Türkçe LINUX
+işletim sistemi üzerinde çalışması sonucu olan bir **bug** olduğunu düşünüyor.
+Önerdiği çözüm ise oldukça basit:
 
 Eğer MATLAB'ı
 

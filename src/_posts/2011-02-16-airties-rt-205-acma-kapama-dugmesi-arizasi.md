@@ -23,10 +23,9 @@ modemi sürekli açık tutmuyorum. Evdeki 1 Mbit 4 GB kotalı internet ile zaten
 öyle adam gibi dosya indirmek mümkün olmuyor. Bu internete 30 TL’ye yakın ücret
 ödüyoruz ya, o da ayrı bir konu.** Neyse, modemi sürekli açık tutmamak için
 arkasındaki açma kapama düğmesinden kapatıp açıyorum (günde 2 veya 3 defa). Daha
-doğrusu kapatıp açıyordum. Yaklaşık 150 TL saydığımız [AirTies
-RT-205](http://www.airties.com/product-details.asp?pn=RT-205&amp;dil=tr) modem
-yaklaşık 1 - 2 hafta sonra su koyvermeye başladı. Arkadaki açma - kapama düğmesi
-arıza sinyalleri vermeye başladı.
+doğrusu kapatıp açıyordum. Yaklaşık 150 TL saydığımız [AirTies RT-205](http://www.airties.com.tr/datasheets/RT205TR_DS.pdf)
+modem yaklaşık 1 - 2 hafta sonra su koyvermeye başladı.
+Arkadaki açma - kapama düğmesi arıza sinyalleri vermeye başladı.
 
 ![AirTies RT-205 Arka Görüntüsü](/assets/images/kb/215-2-16299193-a.jpg)
 

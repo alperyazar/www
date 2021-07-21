@@ -28,7 +28,8 @@ sergiye katılıyoruz. Merak edenleri sergiye bekliyorum. :)
 
 Proje sergisi **29 Haziran - 1 Temmuz 2012** tarihlerinde, **Çankaya Belediyesi
 Çağdaş Sanatlar Merkezi**'nde yapılacak. **Biz sadece 29 ve 30 Haziran
-tarihlerinde sergide bulunabileceğiz.** Sergiye son başvuru tarihi ise 8 Haziran
-2012. Tüm bilgileri [http://www.bps.org.tr](http://www.bps.org.tr) adresinden
+tarihlerinde sergide bulunabileceğiz.** Sergiye son başvuru tarihi ise 8 Haziran.
+
+Tüm bilgileri `http://www.bps.org.tr` `404 🔗` adresinden
 edinebilirsiniz. Organizasyonda emeğe geçen tüm kuruluş ve kişilere ben de
 teşekkürlerimi sunarım.

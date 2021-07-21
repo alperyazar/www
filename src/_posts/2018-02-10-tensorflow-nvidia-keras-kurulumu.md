@@ -13,6 +13,12 @@ tags:
 ayuid: 215-2-10013636
 ---
 
+**Dikkat! Eski içerik.** Bu yazı 2018'de yazılmış olup içerikte önemli bir
+güncelleme yapılmamıştır. Bu yüzden bu yazıdaki içerikler yüksek ihtimalle
+geçerliliğini yitirmiştir. Yazı, arşiv amaçlı tutulmaktadır ve daha güncel
+kaynaklara bakmanızı öneririm.
+{: .notice--warning}
+
 Aşağıda yazdığım kısımlar konu ile ilgili kendime aldığım notlardır. Bir blog
 yazısına kıyasla daha az özenle yazılmıştır. Faydalı olması için paylaşıyorum.
 {: .notice--info}
@@ -44,7 +50,7 @@ yazılım indirmeniz gerektiği anlaşılıyor olmalı.
    listeden:
    [https://developer.nvidia.com/cuda-gpus](https://developer.nvidia.com/cuda-gpus)
    Tensorflow GPU desteği için CUDA Compute Capability en az 3.0 istiyor (Ref:
-   [https://www.tensorflow.org/install/install_windows](https://www.tensorflow.org/install/install_windows)).
+   `https://www.tensorflow.org/install/install_windows` `404 🔗`).
    Eğer ekran kartımız bunu desteklemiyorsa oturup ağlayabiliriz. Şaka şaka, GPU
    desteksiz kurulabilir Tensorflow. Bu dokümanda yazmadım ama daha basit
    olacaktır zaten, bodos Tensorflow kurulumu ile devam edilebilir bence.
@@ -92,12 +98,12 @@ yazılım indirmeniz gerektiği anlaşılıyor olmalı.
 1. Keras kurulumu için `pip3 install keras` yazıyoruz yine Windows CMD’ye
    (Python shell değil).
 2. Test etmek için örnek bir kod çalıştıracağız. Kod, MNIST set kullanacak ve
-   MLP networkü eğitecek.
-   [Şu](https://github.com/fchollet/keras/blob/master/examples/mnist_mlp.py)
-   adresten ilgili dosyayı indiriyoruz. Diğer python scriptleri çalıştırdığımız
-   gibi `python mnist_mlp.py` ile çalıştırıyoruz. Not: Bu script ilk olarak
-   MNIST data setini indiriyor internetten. O yüzden ilk çalıştırmada biraz
-   bekletebilir. Daha sonra lokal’deki datayı kullanacaktır.
+   MLP networkü eğitecek. Şu
+   (`https://github.com/fchollet/keras/blob/master/examples/mnist_mlp.py` `404
+   🔗`) adresten ilgili dosyayı indiriyoruz. Diğer python scriptleri
+   çalıştırdığımız gibi `python mnist_mlp.py` ile çalıştırıyoruz. Not: Bu script
+   ilk olarak MNIST data setini indiriyor internetten. O yüzden ilk çalıştırmada
+   biraz bekletebilir. Daha sonra lokal’deki datayı kullanacaktır.
 3. Eğer tam data işlenmeye başlanınca bilgisayar "xxx (Nvidia GPU modeli)
    çıkartılamaz" gibi bir hata verip çakılıyorsa ve PC donuyorsa **Hata
    Ayıklama** kısmına bakın.
