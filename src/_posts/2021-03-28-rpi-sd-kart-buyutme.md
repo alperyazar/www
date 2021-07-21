@@ -2,17 +2,18 @@
 title: "Raspberry Pi SD kart taşıma ve büyütme"
 excerpt: "Kullandığınız SD kartı aynı boy ya da daha büyük bir karta nasıl taşıyabileceğinizi anlatıyorum."
 categories:
-    - blog
+    - kb
 tags:
     - tr
     - raspberry-pi
     - sd
     - raspbian
     - raspberry-pi-os
+ayuid: 215-2-71313861
 header:
-    overlay_image: /assets/images/blog/21/2021-03-28-rpi-header.jpg
+    overlay_image: /assets/images/kb/215-2-71313861-header.jpg
     overlay_filter: 0.5
-    teaser: /assets/images/blog/21/2021-03-28-rpi-promo.png
+    teaser: /assets/images/kb/215-2-71313861-promo.png
 ---
 
 Raspberry Pi 400'de kullandığım SD kartın boyutu biraz küçük kalmaya başlayınca
