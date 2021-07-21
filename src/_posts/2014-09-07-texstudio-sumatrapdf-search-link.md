@@ -22,8 +22,8 @@ Given steps are tested by using **TeXstudio 2.10.8** and **SumatraPDF v3.1.1
 64-bit** on a **Windows 7 64-bit** machine. However, I am pretty sure it will
 work for almost all possible future and previous versions.
 
-This post will be based on [this
-article](http://robjhyndman.com/hyndsight/texstudio-sumatrapdf/) But since it
+This post will be based on this article
+(`http://robjhyndman.com/hyndsight/texstudio-sumatrapdf/` `404 🔗`) But since it
 was published in 2011, there are some slight changes in software menus. You may
 also read it.
 {: .notice--info}
