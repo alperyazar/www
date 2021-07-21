@@ -1,5 +1,5 @@
 ---
-title: "RADAR YYYY-W##"
+title: "RADAR YYYY-W##(Son Hafta)"
 excerpt: "Things I came across/Denk geldiklerim"
 categories:
     - radar
@@ -16,7 +16,7 @@ toc: false
 Taslak/Draft
 {: .notice--danger}
 
-[YYYY-MM-DD YYYY-MM-DD]
+[YYYY-MM-DD(Cuma) YYYY-MM-DD(Cuma)]
 
-* 🇬🇧 New.
+* 🇬🇧 News.
 * 🇹🇷 Gelişme.
