@@ -1,0 +1,915 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.23.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>İBTÇ: Sorunu Belirleme - ayazar’s personal space</title>
+<meta name="description" content="İlk önce bilgisayardaki sorunu bulmaya çalışıyorum.">
+
+
+  <meta name="author" content="Alper Yazar">
+  
+  <meta property="article:author" content="Alper Yazar">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="ayazar's personal space">
+<meta property="og:title" content="İBTÇ: Sorunu Belirleme">
+<meta property="og:url" content="https://www.ayazar.com/log/2012/07/ibtc-sorunu-belirleme.html">
+
+
+  <meta property="og:description" content="İlk önce bilgisayardaki sorunu bulmaya çalışıyorum.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2012-07-29T00:00:00+03:00">
+
+
+
+  <meta property="article:modified_time" content="2021-04-23T12:01:35+03:00">
+
+
+
+
+<link rel="canonical" href="https://www.ayazar.com/log/2012/07/ibtc-sorunu-belirleme.html">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Alper Yazar",
+      "url": "https://www.ayazar.com/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="ayazar's personal space Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/images/apple-touch-icon.png?v=20210512">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png?v=20210512">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png?v=20210512">
+<link rel="manifest" href="/assets/images/site.webmanifest?v=20210512">
+<link rel="mask-icon" href="/assets/images/safari-pinned-tab.svg?v=20210512" color="#5bbad5">
+<link rel="shortcut icon" href="/assets/images/favicon.ico?v=20210512">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-config" content="/assets/images/browserconfig.xml?v=20210512">
+<meta name="theme-color" content="#ffffff">
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          ayazar's personal space
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/">Hi 👋</a>
+            </li><li class="masthead__menu-item">
+              <a href="/cv/">CV 🖋️</a>
+            </li><li class="masthead__menu-item">
+              <a href="/collections/">Collections 📚</a>
+            </li><li class="masthead__menu-item">
+              <a href="/awesome/">Awesome 🕶️</a>
+            </li><li class="masthead__menu-item">
+              <a href="/contact/">Contact 🇬🇧</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tr/iletisim/">İletişim 🇹🇷</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+<!--<div><center><p class="notice--success"><strong>Announcement:</strong> ...</p></center></div>-->
+<div><center><p class="notice--primary"><strong>Latest Post:</strong>
+    
+    
+
+    
+
+    
+
+    
+
+     🇬🇧 <a href="/log/2021/05/radar-17.html" rel="permalink">RADAR 2021-W17</a>
+    
+</p></center></div>
+
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/bio/ayazar.png" alt="Alper Yazar" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Alper Yazar</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>PhD candidate and electronics engineer</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="https://orcid.org/0000-0002-0904-9623" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-orcid" aria-hidden="true"></i><span class="label">0000-0002-0904-9623</span></a></li>
+          
+        
+          
+            <li><a href="http://www.linkedin.com/in/alperyazar" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/alperyazar" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">alperyazar</span></a></li>
+          
+        
+          
+            <li><a href="https://twitter.com/alper_yazar" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span class="label">@alper_yazar</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="İBTÇ: Sorunu Belirleme">
+    <meta itemprop="description" content="İlk önce bilgisayardaki sorunu bulmaya çalışıyorum.">
+    <meta itemprop="datePublished" content="2012-07-29T00:00:00+03:00">
+    <meta itemprop="dateModified" content="2021-04-23T12:01:35+03:00">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">İBTÇ: Sorunu Belirleme
+</h1>
+          
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2012-07-29T00:00:00+03:00">July 29, 2012</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p class="notice">🇹🇷 Turkish content</p>
+        <p><img src="/assets/images/blog/12/2012-07-29-ilk-bilgisayar.jpg" alt="İlk Bilgisayarım" /></p>
+
+<p><em>İlk Bilgisayarım</em></p>
+
+<p>Efendim, bu çalışmanın ana sayfasında belirttiğim gibi 2000 yılında aldığım ilk
+bilgisayarımın çalışmaması üzerine böyle bir işe soyunmuştum. İlk olarak sorunun
+ne olduğunu belirlemeye çalışıyorum.</p>
+
+<p>Bilgisayarım eski güç kaynağını başka işlerde kullanmak üzere söktüğümden yeni
+bir güç kaynağı alıp, takmıştım. En son bıraktığımda çalışan bilgisayarım, bu
+sefer açma tuşuna bastığım zaman hiç bir tepki vermiyordu. Böyle bir durumda
+adettendir, cihaz sökülür tabii ki de. :) Ben de geleneği bozmayarak kasayı
+tekrar açtım. İlk işim güç kaynağını kontrol etmek oldu. Güç kaynağının
+bağlantılarını ana karttan ayırdım. ATX güç kaynaklarının ana karta giren
+soketindeki yeşil ve siyah kabloyu kısa devre ederek çalıştırmak mümkün. Böyle
+denediğim zaman güç kaynağı çalışıyor ve çıkışlarında uygun voltaj değerleri
+veriyordu. Demeki ki sorun güç kaynağında değil, anakarttaydı. Anakarttaki devre
+güç kaynağını bile açamıyordu. Ben de BIOS piline bakmaya karar verdim. Pili
+söktüm ve voltajını ölçtüğüm zaman 0V civarında bir değer okudum. Normalde 3.3V
+olan bir pil. Bir sorun yakalamıştım, en azından BIOS pili bitmişti. BIOS
+pilinin bilgisayarın açılmasına engel olmaması gerektiğini düşünüyordum. Çünkü
+güç kaynağı stand-by durumda zaten ana karta 5V sağlıyordu. Bilgisayarı açma
+kapama düğmesinin yapacağı tek şey, benim elle yaptığım gibi yeşil kabloyu nötre
+(siyah kablo) bağlamaktı. Bunu yapacak devrenin de güç kaynağından gelen besleme
+ile çalışması gerekirdi BIOS piline ihtiyaç duymadan. Neyse, bir saatçiden BIOS
+pili ebatlarında bir pil alıp (3 TL’ye) anakarta taktım. Tekrar açma tuşuna
+bastım ve fan sesleri gelmeye başladı. Bilgisayar açılmıştı, öndeki yeşil güç
+ışığı yanıyordu. Çok ilginçtir ki bitik BIOS pili ile bilgisayar açılmıyordu.</p>
+
+<p>Fakat yine bir sorun vardı. Bilgisayardan sadece fan sesi geliyor ve yeşil ışığı
+yanıyordu. Yani aslında fonksiyonel olarak çalışmıyordu. Bir hata olsa BIOS’un
+“bip bip” sesleri ile hata mesajı vermesi gerekirdi. Sanki BIOS, POST (Power-On
+Self Test) işlemini bile yapmıyor, “boot” işlemlerine başlamıyordu. Ben de
+anakarta bağlı tüm donanımları sökmeye başladım. Anakarta bağlı hiç bir kart,
+sürücü kalmadan açmayı tekrar denedim. Sonuç aynıydı. Daha sonra RAMleri söktüm
+tekrar denedim, bir değişiklik yok. Sağlıklı çalışan bir BIOS’un anakarta bağlı
+bir hafıza olmadığında hata mesajı vermek için ötmesi gerekirdi. Son olarak
+işlemciyi çıkarttım ve tekrar düğmeye bastım. Hiç işlemci olmadığı durumda BIOS
+sesli mesaj verebiliyor mu bilmiyorum. Çünkü işlemci olmadan POST işlemleri
+başlamıyor olabilir. O gerekli kodları işleyebilecek işlemci dışında bir yer var
+mı bilmiyorum. Bu yüzden işlemciyi tekrar taktım.</p>
+
+<p>İşlemciyi taktıktan sonra güç düğmesine bastığımda BIOS ötmeye başlamıştı! Demek
+ki bir şeyler düzelmişti. İşlemcinin soketinde yerinde çıkması pek mükün
+durmuyor. Ama söküp taktığım zaman yerine tam mı oturdu artık bilemiyorum.
+Neyse, çok kurcalamadan RAMlerden birini taktım. Bu sefer BIOS’un ötemsi
+değişmişti. Artık sadece tek bip sesi geliyordu. POST işleminde tek bip gelmesi
+her şeyin sorunsuz olduğun gösteriyordu. Ama hard disk, cd sürücü ve disket
+sürücü gibi sistemin “boot” olabileceği bir donanım olmadan BIOS’un “Her şey
+tamam.” demesi olağan mıdır bilmiyorum? Daha sonra hard diski ve disket
+sürücüsünü anakarta bağlayıp, tekrar çalıştırdım. Sistem yine hard diskten
+“boot” olmuyor ve ekrana hiçbir görüntü gelmiyordu. Fakat açılırken disket
+sürücüde bir şeyler arıyordu. Bu iyi bir şey. İnternetten öğrendiğim kadarı ile
+bu, “Boot Block” adı ile anılan kurtarıcı kısmın çalıştığını gösteriyor. Bu
+kısım bildiğim kadarıyla BIOS kodu bozulduğu zaman size sistemi kurtarmanız için
+bir şans veriyor. Sadece ISA soketiyle bağlantılı ekran kartlarını desteklediği
+için de ekranda bir şey göremiyoruz. Bu da yoluma disket ile devam edeceğimi
+gösteriyor. :)</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/log/tags/ibtc" class="page__taxonomy-item" rel="tag">ibtc</a><span class="sep">, </span>
+    
+      <a href="/log/tags/tr" class="page__taxonomy-item" rel="tag">tr</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/log/categories/project" class="page__taxonomy-item" rel="tag">project</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-04-23">April 23, 2021</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?text=%C4%B0BT%C3%87%3A+Sorunu+Belirleme%20https%3A%2F%2Fwww.ayazar.com%2Flog%2F2012%2F07%2Fibtc-sorunu-belirleme.html" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ayazar.com%2Flog%2F2012%2F07%2Fibtc-sorunu-belirleme.html" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.ayazar.com%2Flog%2F2012%2F07%2Fibtc-sorunu-belirleme.html" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/log/2012/07/ubuntu-disket-surucusu-kullanma.html" class="pagination--pager" title="Ubuntu Üzerinde Disket Sürücüsünü Kullanma
+">Previous</a>
+    
+    
+      <a href="/log/2012/08/ibtc-anakarti-taniyalim.html" class="pagination--pager" title="İBTÇ: Anakartı Tanıyalım
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+      <div class="page__comments">
+  
+  
+      <h4 class="page__comments-title">Comments</h4>
+      <section id="disqus_thread"></section>
+    
+</div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+
+
+
+
+
+
+<div class="grid__item">
+    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src="/assets/images/radar/radar-promo.png" alt="">
+        </div>
+      
+      <h2 class="archive__item-title no_toc" itemprop="headline">
+        
+           🇬🇧 <a href="/log/2021/05/radar-17.html" rel="permalink">RADAR 2021-W17
+</a>
+        
+      </h2>
+      
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2021-05-02T00:00:00+03:00">May 2, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+      <p class="archive__item-excerpt" itemprop="description">Things I came across
+</p>
+    </article>
+  </div>
+
+        
+          
+
+
+
+
+
+
+
+
+
+<div class="grid__item">
+    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src="/assets/images/radar/radar-promo.png" alt="">
+        </div>
+      
+      <h2 class="archive__item-title no_toc" itemprop="headline">
+        
+           🇬🇧 <a href="/log/2021/04/radar-13.html" rel="permalink">RADAR 2021-W13
+</a>
+        
+      </h2>
+      
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2021-04-04T00:00:00+03:00">April 4, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+      <p class="archive__item-excerpt" itemprop="description">Things I came across
+</p>
+    </article>
+  </div>
+
+        
+          
+
+
+
+
+
+
+
+
+
+<div class="grid__item">
+    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src="/assets/images/kb/215-2-71313861-promo.png" alt="">
+        </div>
+      
+      <h2 class="archive__item-title no_toc" itemprop="headline">
+        
+          🇹🇷 <a href="/log/2021/03/rpi-sd-kart-buyutme.html" rel="permalink">Raspberry Pi SD kart taşıma ve büyütme
+</a>
+        
+      </h2>
+      
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2021-03-28T00:00:00+03:00">March 28, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          4 minute read
+        
+      </span>
+    
+  </p>
+
+
+      <p class="archive__item-excerpt" itemprop="description">Kullandığınız SD kartı aynı boy ya da daha büyük bir karta nasıl taşıyabileceğinizi anlatıyorum.
+</p>
+    </article>
+  </div>
+
+        
+          
+
+
+
+
+
+
+
+
+
+<div class="grid__item">
+    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+      
+        <div class="archive__item-teaser">
+          <img src="/assets/images/blog/21/2021-03-21-jekyll-promo.png" alt="">
+        </div>
+      
+      <h2 class="archive__item-title no_toc" itemprop="headline">
+        
+          🇹🇷 <a href="/log/2021/03/tekrar-merhaba-jekyll.html" rel="permalink">Tekrar Merhaba Jekyll!
+</a>
+        
+      </h2>
+      
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2021-03-21T00:00:00+03:00">March 21, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+      <p class="archive__item-excerpt" itemprop="description">Döndüm dolaştım yine Jekyll’ye geçtim
+</p>
+    </article>
+  </div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+    <ul class="social-icons">
+      
+
+      
+        
+          
+            <li><a href="https://orcid.org/0000-0002-0904-9623" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-orcid" aria-hidden="true"></i> ORCID</a></li>
+          
+        
+          
+            <li><a href="https://www.researchgate.net/profile/Alper-Yazar" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
+          
+        
+          
+            <li><a href="https://publons.com/researcher/E-7451-2019/" rel="nofollow noopener noreferrer"><i class="far fa-fw fa-sticky-note" aria-hidden="true"></i> Publons</a></li>
+          
+        
+          
+            <li><a href="http://www.linkedin.com/in/alperyazar" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+          
+        
+          
+            <li><a href="https://scholar.google.com.tr/citations?hl=tr&user=yLCD7acAAAAJ" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-google" aria-hidden="true"></i> Scholar</a></li>
+          
+        
+          
+            <li><a href="https://github.com/alperyazar" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+          
+        
+          
+            <li><a href="https://hackaday.io/ayazar" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-skull-crossbones" aria-hidden="true"></i> Hackaday</a></li>
+          
+        
+          
+            <li><a href="https://twitter.com/alper_yazar" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i> Twitter</a></li>
+          
+        
+          
+            <li><a href="https://www.reddit.com/user/ayazar/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-reddit" aria-hidden="true"></i> Reddit</a></li>
+          
+        
+          
+            <li><a href="http://stackexchange.com/users/1966184/alper-y" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-stack-exchange" aria-hidden="true"></i> Stack Exchange</a></li>
+          
+        
+          
+            <li><a href="https://www.youtube.com/user/alperyazar" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-youtube" aria-hidden="true"></i> YouTube Channel</a></li>
+          
+        
+          
+            <li><a href="https://www.facebook.com/alperyazarcom" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i> Facebook Page</a></li>
+          
+        
+      
+
+      
+        <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+      
+    </ul>
+  </div>
+
+  <div class="page__footer-copyright">&copy; 2011-2021 Alper Yazar. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.
+  <br/><a href='/license/'>License</a> <a href='https://creativecommons.org/licenses/by/4.0/'>CC BY 4.0</a>
+  <br/><a href='/disclaimer/'>Disclaimer</a> <a href='/misc/'>Miscellaneous</a> <a href='/specimen/'>Specimen</a>
+  <br/><img src="https://img.shields.io/github/last-commit/alperyazar/www/master" />
+  <img src="https://img.shields.io/github/commit-activity/m/alperyazar/www.svg"/>
+  <img alt="GitHub last commit (branch)" src="https://img.shields.io/github/last-commit/alperyazar/www/gh-pages?label=last%20deploy">
+  <img src="https://img.shields.io/github/workflow/status/alperyazar/www/full-check?label=Full%20Check" />
+
+  
+  <!-- Default Statcounter code for ayazar Home
+https://www.ayazar.com -->
+<script type="text/javascript">
+    var sc_project=12526402;
+    var sc_invisible=0;
+    var sc_security="d1fcc82c";
+    var scJsHost = "https://";
+    document.write("<sc"+"ript type='text/javascript' src='" +
+    scJsHost+
+    "statcounter.com/counter/counter.js'></"+"script>");
+    </script>
+    <noscript><div class="statcounter"><a title="Web Analytics"
+    href="https://statcounter.com/" target="_blank"><img
+    class="statcounter"
+    src="https://c.statcounter.com/12526402/0/d1fcc82c/0/"
+    alt="Web Analytics"></a></div></noscript>
+    <!-- End of Statcounter Code -->
+    
+</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155131137-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-155131137-1', { 'anonymize_ip': false});
+</script>
+
+
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "https://www.ayazar.com/log/2012/07/ibtc-sorunu-belirleme.html";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/log/2012/07/ibtc-sorunu-belirleme"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://ayazar.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>

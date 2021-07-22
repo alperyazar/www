@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://www.ayazar.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.ayazar.com/" rel="alternate" type="text/html" /><updated>2021-07-22T14:59:24+03:00</updated><id>https://www.ayazar.com/feed.xml</id><title type="html">ayazar’s personal space</title><subtitle>PhD candidate and electronics engineer</subtitle><author><name>ayazar</name></author><entry><title type="html">RADAR 2021-W17</title><link href="https://www.ayazar.com/log/2021/05/radar-17.html" rel="alternate" type="text/html" title="RADAR 2021-W17" /><published>2021-05-02T00:00:00+03:00</published><updated>2021-07-22T14:58:28+03:00</updated><id>https://www.ayazar.com/log/2021/05/radar-17</id><content type="html" xml:base="https://www.ayazar.com/log/2021/05/radar-17.html">&lt;p&gt;[2021-04-26 2021-05-02]&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;🇬🇧 Xilinx announced a SOM product: &lt;strong&gt;Kria&lt;/strong&gt; It is a Zynq Ultrascale+ EV
+board (for now). There are also companies like Trenz, Enclustra making SOM
+boards. It looks like Xilinx decided to release its own SOM design. Of course,
+they emphasize AI applications. For now, only Kria K26 is avaliable with a
+starter kit but more SOMs are on way.
+&lt;a href=&quot;https://www.xilinx.com/products/som/kria.html&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;🇬🇧 &lt;a href=&quot;https://gchq.github.io/CyberChef/&quot;&gt;CyberChef - The Cyber Swiss Army
+Knife&lt;/a&gt; Dozens of web based “recipes”
+(tools) for developers. You can “bake” in whatever order you want.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Alper Yazar</name></author><category term="radar" /><category term="en" /><summary type="html">Things I came across</summary></entry><entry><title type="html">RADAR 2021-W13</title><link href="https://www.ayazar.com/log/2021/04/radar-13.html" rel="alternate" type="text/html" title="RADAR 2021-W13" /><published>2021-04-04T00:00:00+03:00</published><updated>2021-07-22T14:58:28+03:00</updated><id>https://www.ayazar.com/log/2021/04/radar-13</id><content type="html" xml:base="https://www.ayazar.com/log/2021/04/radar-13.html">&lt;p&gt;[2021-03-29 2021-04-04]&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;(🇬🇧) Looks like we have a new foundation:
+&lt;a href=&quot;https://osfpga.org/&quot;&gt;Open-Source FPGA Foundation&lt;/a&gt; and their
+&lt;a href=&quot;https://github.com/os-fpga&quot;&gt;repo&lt;/a&gt;. Domain registered on 2021-03-12. I don’t
+know what they will do but it is good to see more open source movements on
+FPGA world.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Alper Yazar</name></author><category term="radar" /><category term="en" /><summary type="html">Things I came across</summary></entry><entry><title type="html">Raspberry Pi SD kart taşıma ve büyütme</title><link href="https://www.ayazar.com/log/2021/03/rpi-sd-kart-buyutme.html" rel="alternate" type="text/html" title="Raspberry Pi SD kart taşıma ve büyütme" /><published>2021-03-28T00:00:00+03:00</published><updated>2021-07-21T23:32:46+03:00</updated><id>https://www.ayazar.com/log/2021/03/rpi-sd-kart-buyutme</id><content type="html" xml:base="https://www.ayazar.com/log/2021/03/rpi-sd-kart-buyutme.html">&lt;p&gt;Raspberry Pi 400’de kullandığım SD kartın boyutu biraz küçük kalmaya başlayınca
+daha büyük bir SD karta (performansı da biraz daha iyi olabilir) geçmem gerekti.
+Bu yazıyı küçük bir not yazısı olarak düşünebilirsiniz. İnternette farklı
+yöntemlerle bu işi tarifleyen birçok yazı bulabilirsiniz. Yapılan işlemin çoğu
+RPi 400’e özel olmadığından diğer RPi’ler ya da başka kartlar için de bu yöntem
+uygulanabilir.&lt;/p&gt;
+
+&lt;p class=&quot;notice--warning&quot;&gt;Eğer hedef SD kart, ilk SD karttan daha küçük ise bu yöntem
+olduğu gibi kullanılamaz. Öncesinde dosya sistemlerini küçültmek ve kopyalamayı
+dosya sistemlerini göz önüne alarak (bu yazıda &lt;em&gt;ham&lt;/em&gt; kopyalama anlatılıyor)
+yapmak gerekecektir.&lt;/p&gt;
+
+&lt;p&gt;Ben işlemleri üzerinde Linux koşan ve SD kart takabildiğim başka bir bilgisayarda
+yaptım. Windows için &lt;a href=&quot;https://peppe8o.com/raspberry-pi-migrating-to-larger-sd-card-with-windows-step-by-step-guide/&quot;&gt;burada&lt;/a&gt;
+anlatıldığı gibi &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Win32DiskImager&lt;/code&gt; isimli bir yazılım da kullanılabilir duruyor
+(denemedim).&lt;/p&gt;
+
+&lt;p&gt;İşlemleri yapacağımızın bilgisayarın hangi Linux dağıtımını çalıştırdığının
+önemi yok. Aşağıda verdiğim komutları &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;BASH&lt;/code&gt; üzerinde çalıştırdım. Root hakkımızın
+olması yani &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo&lt;/code&gt; ile komutları çalıştırabilmemiz gerekiyor.&lt;/p&gt;
+
+&lt;h1 id=&quot;sd-kartı-bilgisayara-kopyalama&quot;&gt;SD kartı bilgisayara kopyalama&lt;/h1&gt;
+
+&lt;p class=&quot;notice--warning&quot;&gt;Sonraki adımlarda hata yapmamak adına bilgisayarınıza takılı ve ihtiyaç duymadığınız
+USB bellek, harici disk, telefon gibi başka depolama birimleri var ise onları
+şu aşamada çıkartmanızı öneririm.&lt;/p&gt;
+
+&lt;p&gt;İlk olarak RPi’de kullandığımız SD kartı çalışacağımız bilgisayara takıyoruz.
+Aşağıdaki komutla SD kartımızın hangi isimde göründüğüne bakıyoruz.&lt;/p&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;fdisk &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Benim durumumda SD kart &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/dev/sdb&lt;/code&gt; altında gözüküyordu. &lt;strong&gt;Sizin durumunuzda
+başka bir isimde çıkabilir.&lt;/strong&gt; İleride yazdığım komutlardaki &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/dev/sdX&lt;/code&gt; kısımlarını
+sizde çıkan isim ile değiştirmeyi unutmayın. Örneğin ben, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/dev/sdX&lt;/code&gt; yerine
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/dev/sdb&lt;/code&gt; yazdım.&lt;/p&gt;
+
+&lt;p class=&quot;notice--success&quot;&gt;Eğer SD kartı bulmakta zorlanıyorsanız şunları yapabilirsiniz: 1) SD kartı
+çıkarın ve &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo fdisk -l&lt;/code&gt; komutunu çalıştırın ve daha sonra geri takın tekrar
+çalıştırın, yeni eklenen isim SD kart olmalıdır. 2) Yüksek ihtimalle
+bilgisayarınızda kaç disk varsa &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;a&lt;/code&gt; dan başlayarak o kadar harf zaten disklerinize
+atanmış olacaktır. Örneğin 3 diskiniz varsa &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;a,b,c&lt;/code&gt; harfleri yüksek ihtimalle
+bu disklere atanmış olacağından başka bir USB bellek gibi cihaz da takılı değilse
+SD kart &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;d&lt;/code&gt; harfini alacaktır. 3) Standart Raspberry Pi OS (eski adıyla Raspbian)
+kullanıyorsanız SD kart ile beraber iki bölüm de gözükecektir, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/dev/sdX0&lt;/code&gt;
+ve &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/dev/sdX1&lt;/code&gt;. Bu da bir doğrulama yöntemi olabilir.&lt;/p&gt;
+
+&lt;p&gt;Birçok Linux dağıtımı SD kartı takınca otomatik olarak üzerindeki 2 bölümü
+otomatik &lt;em&gt;mount&lt;/em&gt; edecektir. Bu bölümler üzerinde işlem yapmadığımız sürece
+bir problem olmayacaktır ama emin olmak adına &lt;em&gt;mount&lt;/em&gt; edilmiş kısımları &lt;em&gt;umount&lt;/em&gt;
+edelim. Böylece kopyalama yaparken dosya sistemlerin tutarsızlaşma riskini de
+ortadan kaldırmış olacağız.&lt;/p&gt;
+
+&lt;p&gt;İlk olarak şu komutla &lt;em&gt;mount&lt;/em&gt; edilmiş kısımlar var mı diye bakalım. Sonuç boş
+dönerse bir sonraki komutu çalıştırmaya gerek yok ama çalıştırsanız da bir
+zararı olmayacaktır.&lt;/p&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;mount | &lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; /dev/sdX
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Aşağıdaki komutla &lt;em&gt;umount&lt;/em&gt; edelim.&lt;/p&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;umount /dev/sdX+&lt;span class=&quot;o&quot;&gt;([&lt;/span&gt;0-9]&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Emin olmak adına iki üstteki komutla &lt;em&gt;mount&lt;/em&gt; edilmiş bölüm var mı diye bakabiliriz.
+Bu noktadan sonra &lt;em&gt;mount&lt;/em&gt; edilmiş bir yer kalmaması gerekiyor.&lt;/p&gt;
+
+&lt;p&gt;Aşağıdaki komutla da SD kartı bilgisayarımıza kopyalamış oluyoruz.&lt;/p&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo dd &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/dev/sdX &lt;span class=&quot;nv&quot;&gt;of&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;rpi.img &lt;span class=&quot;nv&quot;&gt;bs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1M &lt;span class=&quot;nv&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;progress
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Bu noktadan sonra komutu çalıştırdığımız dizinde oluşan &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rpi.img&lt;/code&gt; aslında SD karta
+kurulum yapılacak bir işletim sistemi imajı olarak düşünülebilir. Bu noktadan
+sonra SD kartı çıkartabiliriz.&lt;/p&gt;
+
+&lt;p class=&quot;notice--info&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dd&lt;/code&gt; komutu SD kartın tüm içeriğini kopyalayacaktır. Örneğin kartınız 32 GB diyelim.
+10 GB dolu olsa bile &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rpi.img&lt;/code&gt; 32 GB olacaktır. Çünkü &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dd&lt;/code&gt;, dosya sistemini tanımaz
+ve &lt;em&gt;ham&lt;/em&gt; haliyle tüm içeriği kopyalar. Eğer kartınızın çoğu dolu ise zaten gereksiz
+yere kopyalanacak kısım az olacağından ekstra kopyalayacağınız kısım zaman ve
+boyut açısından çok problem olmayacaktır. Ama kartınızın çok azını kullanıyorsanız
+ve kullanılmayan kısmın kopyalanması ile uğraşmak istemiyorsanız
+&lt;a href=&quot;https://serverfault.com/questions/439128/dd-on-entire-disk-but-do-not-want-empty-portion&quot;&gt;buradaki&lt;/a&gt;
+(🇬🇧)
+gibi çözümlere bakabilirsiniz. Yine de bu işlemi bir kere yapacağınızdan alternatif
+aramak yerine kartı olduğu gibi kopyalamak iyi bir çözüm olabilir.&lt;/p&gt;
+
+&lt;h1 id=&quot;bilgisayardan-yeni-sd-karta-kopyalama&quot;&gt;Bilgisayardan yeni SD karta kopyalama&lt;/h1&gt;
+
+&lt;p&gt;Şimdi &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rpi.img&lt;/code&gt; dosyasını geçiş yapacağımız (boyutu eskisinden küçük olmayan)
+SD karta yazacağız. Bunun için üstteki adımlarda olduğu gibi yeni SD kartımızın
+harfini, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/dev/sdX&lt;/code&gt;, bulmamız gerekiyor. Yine yukarıdaki komutları kullanarak
+&lt;em&gt;mount&lt;/em&gt; edilmiş bölüm varsa onları &lt;em&gt;umount&lt;/em&gt; etmemiz gerekiyor.&lt;/p&gt;
+
+&lt;p class=&quot;notice--warning&quot;&gt;İlk SD kartı söküp, ikincisini bilgisayar taktığımızda aynı &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/dev/sdX&lt;/code&gt; değerini
+alması beklenir ama bu garanti değildir. Bu yüzden SD kartı değiştirince
+tekrar kontrol etmekte fayda var.&lt;/p&gt;
+
+&lt;p&gt;SD kartın harfini bulduktan sonra imaj dosyasını yazacağız.&lt;/p&gt;
+
+&lt;p class=&quot;notice--danger&quot;&gt;Aşağıdaki komut dikkat etmezseniz tehlikeli olabilir. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;of&lt;/code&gt; parametresine verilen
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/dev/sdX&lt;/code&gt;in SD kartı gösterdiğinden emin olun. &lt;strong&gt;Aksi taktirde sistemde bulunan
+bir diskinizin üzerine dönüşü neredeyse olmayacak şekilde yazabilirsiniz.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo dd &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;of&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/dev/sdX &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;rpi.img &lt;span class=&quot;nv&quot;&gt;bs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1M &lt;span class=&quot;nv&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;progress
+&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sync&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;SD kartımızı çıkartıp Raspberry Pi’ı açıp kalan işlemlere devam edebiliriz. Artık
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rpi.img&lt;/code&gt; dosyasının olduğu bilgisayar ile de işimiz kalmadı.&lt;/p&gt;
+
+&lt;h1 id=&quot;raspberry-pi-üzerinde-alanların-genişletilmesi&quot;&gt;Raspberry Pi üzerinde alanların genişletilmesi&lt;/h1&gt;
+
+&lt;p class=&quot;notice--info&quot;&gt;Bundan sonraki komutları Raspberry Pi üzerinde çalıştıracağız.&lt;/p&gt;
+
+&lt;p class=&quot;notice--info&quot;&gt;Raspberry Pi’ı yeni kart ile ilk açışımızda konsolda disklerin kontrol edildiğine
+dair, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fsck&lt;/code&gt; gibi, bir mesaj görebiliriz. Burada panik olmamıza gerek yok.&lt;/p&gt;
+
+&lt;p&gt;Yeni SD kartımız eskisinden büyükse bile RPi üzerinde alanın genişlediğini
+hemen görmüyoruz çünkü SD kart üzerindeki dosya sistemlerinin de genişletilmesi
+gerekiyor. Denemek için&lt;/p&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;df&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-h&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;komutu ile ne kadar alanın olduğunu görebilirsiniz. SD kartınız büyüdüyse bile
+buradaki değerler eski SD kartınızın değerlerini gösterecektir. Dosya sistemini
+genişletmek için Raspberry Pi OS ile gelen &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;raspi-config&lt;/code&gt; aracını kullanabiliriz.&lt;/p&gt;
+
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;raspi-config
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;komutunu çalıştırdıktan sonra açılan ekrandan
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;6 Advanced Options&lt;/code&gt; ve ardından &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;A1 Expand Filesystem&lt;/code&gt; seçeneğini seçelim.
+RPi’yi yeniden başlattığımızda kartımızın tüm alanının gözüküyor olması gerekiyor.
+Yine &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;df -h&lt;/code&gt; ile kontrol edebilirsiniz.&lt;/p&gt;
+
+&lt;h1 id=&quot;sonuç&quot;&gt;Sonuç&lt;/h1&gt;
+
+&lt;p&gt;Temelde eski SD kartımızın olduğu gibi yeni SD kartımıza kopyalamış ve ardından
+da dosya sistemini yeni boyuta göre genişletmiş olduk. Eğer Windows üzerinde
+bu işi yapmak istiyorsanız, daha küçük bir SD karta geçiyorsanız, kopyalama
+işlemlerini kısaltmak için kart içeriğini &lt;em&gt;ham&lt;/em&gt; olarak taşımak değil de dosya
+sistemlerinden haberdar yöntemlerle taşımak istiyorsanız internetteki diğer
+çözümlere bakabilirsiniz.&lt;/p&gt;</content><author><name>Alper Yazar</name></author><category term="kb" /><category term="tr" /><category term="raspberry-pi" /><category term="sd" /><category term="raspbian" /><category term="raspberry-pi-os" /><summary type="html">Kullandığınız SD kartı aynı boy ya da daha büyük bir karta nasıl taşıyabileceğinizi anlatıyorum.</summary></entry><entry><title type="html">Tekrar Merhaba Jekyll!</title><link href="https://www.ayazar.com/log/2021/03/tekrar-merhaba-jekyll.html" rel="alternate" type="text/html" title="Tekrar Merhaba Jekyll!" /><published>2021-03-21T00:00:00+03:00</published><updated>2021-05-12T08:57:41+03:00</updated><id>https://www.ayazar.com/log/2021/03/tekrar-merhaba-jekyll</id><content type="html" xml:base="https://www.ayazar.com/log/2021/03/tekrar-merhaba-jekyll.html">&lt;p&gt;Web sitem ve blogumla ilgili değişmeyen tek bir şey var, o da sitenin
+altyapısını sürekli değiştirmem. Bu harcadığım zamanı içeriğe harcasam güzel
+yazılar veya projeler çıkarabilirdim. 2016 senesinde kullandığım Jekyll’den 2019
+yılında &lt;a href=&quot;/log/2019/04/merhaba-sphinx.html&quot;&gt;uzaklaşmıştım&lt;/a&gt;. Şimdi ise
+tekrar Jekyll’deyim.&lt;/p&gt;
+
+&lt;h1 id=&quot;neden&quot;&gt;Neden?&lt;/h1&gt;
+
+&lt;p&gt;Ayrılma nedenim olarak da Ruby temelli olan bu yazılımı Windows’ta ve Linux’ta
+rahat kullanamam olarak belirtmiştim. O zamanlar, şu an kullandığım CI/CD
+mantığındaki site derleme ve yayınlama akışı da yoktu. Ben bu konulara çok
+uzaktım, belki çok yaygın da değildi, o yüzden siteyi her zaman local’de
+derleyip FTP ile çıktıyı sitemin sunucusuna yüklüyordum. Böyle olunca Jekyll’nin
+sürekli içerik ürettiğim bilgisayarda düzgün çalışması gerekiyordu. Daha sonra
+Sphinx’e geçmiştim, yine aynı akışı kullanarak. Fakat Python temelli olan
+Sphinx’i, Ruby temelli olan Jekyll’ye göre daha rahat çalıştırmıştım.&lt;/p&gt;
+
+&lt;p&gt;Şimdilerde ise site Github Actions tarafından otomatik derleniyor. Daha önceden
+Travis CI kullanıyordum ama gelir modellerini değiştirince ben de Github
+Actions’a taşındım, merak da ediyordum. Bu durumda Netlify gibi sistemlerle
+entegre ederek de sitenin Github Actions tarafından deploy edilmesinden önce
+neye benzeyeceğini doğrudan web üzerinden görmek mümkün. Yani içerik yazdığım
+bilgisayarda Jekyll’nin kurulu olması bile gerekmiyor. Sitenin içerini Github’un
+web arayüzünden bile güncellemek mümkün. Bu da Jekyll’nin kullanımını
+kolaylaştırıyor.&lt;/p&gt;
+
+&lt;p&gt;Yine eski dönemlere baktığım zaman günümüzde &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gem&lt;/code&gt; ve &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundler&lt;/code&gt; ile Jekyll ve
+kullandığım tema olan Minimal Mistakes’i kullanmak kolaylaştı diye düşünüyorum.
+2016’da bu işler bu kadar kolay mıydı bilmiyorum çünkü &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gem&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pip&lt;/code&gt; gibi paket
+sistemlerini bilmiyordum. O yıllarda Minimal Mistakes’i kullanmak bile zordu
+sanırım. Şu anda ise &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt; gibi dosyalarla bir konfigürasyon tutmak ve
+Windows/Linux bir sisteme sitenin geliştirme ortamını kurmak çok daha kolay
+geliyor. &lt;a href=&quot;https://dependabot.com/&quot;&gt;Dependabot&lt;/a&gt; ile de güncellemeleri takip etme
+işini Github’a yıkınca altyapı işleri de oldukça kolaylaştı.&lt;/p&gt;
+
+&lt;p&gt;Bir önceki altyapı MkDocs’tu ve o da bir statik site üreteci aslında. Fakat
+yazılım, bir blog, kişisel siteden ziyade biraz daha dokümantasyon amacı ile
+tasarlanmış. Böyle olunca da onu bir blog platformu olarak kullanmak daha zor
+oluyor. MkDocs’u &lt;a href=&quot;https://asynx.dev/&quot;&gt;asynx.dev&lt;/a&gt; üzerinde de kullanıyorduk ve bu
+özellikleri eklemek için başlamaya niyetlendiğim bir &lt;a href=&quot;https://github.com/asynx-dev/mkdocs-asynx-plugin&quot;&gt;eklenti
+projesi&lt;/a&gt; vardı. Orada da
+Jekyll’ye &lt;a href=&quot;https://asynx.dev/blog/2021/02/jekyll.html&quot;&gt;geçtik&lt;/a&gt; benzer
+sebeplerden. İlgilendiğim iki altyapıyı da ortaklamak adına kişisel sitemi de
+Jekyll’ye taşıdım.&lt;/p&gt;
+
+&lt;h1 id=&quot;değerlendirme&quot;&gt;Değerlendirme&lt;/h1&gt;
+
+&lt;p&gt;Geriye dönük baktığım zaman bugüne kadar bu alan adında şimdiye kadar Wordpress,
+Jekyll, Dokuwiki, MkDocs ve Sphinx kullandım, belki unuttuğum başka altyapı da
+vardır. Wordpress ve Dokuwiki, &lt;em&gt;dinamik&lt;/em&gt; sistemler olduğu için arkalarında PHP
+çalıştıran bir web sunucusuna ihtiyaç duyuyorlar. Diğerleri ise &lt;em&gt;statik&lt;/em&gt; olarak
+bir web sitesi üretiyorlar. Statik üreticiler LaTeX’e benziyor, kaynak kodundan
+bir doküman üretiyorlar. Dinamik sistemler ise Microsoft Word gibi denebilir,
+içeriğin görüntülenmesi için o yazılıma sürekli ihtiyaç duyuyorlar. Dinamik bir
+sisteme sahip olmanın avantajı birçok eklenti ya da sunucuda yazılan ufak
+scriptler ile siteye güzel özellikler eklenebilmesi, statik sistemlerde bu biraz
+daha zor. Fakat sürekli bir sunucu ile uğraşmak ek bir iş getiriyor. Hosting
+hizmeti olsa da kendi sunucunuz olsa da sürekli arkadaki sistemlerin
+güncellenmesini, bir miktar güvenliğini düşünmek zorundasınız. Statik araçlarla
+üretilmiş bir siteyi Github Pages, Netlify gibi platformlarda sunmak mümkün
+olduğundan sunucu tarafı ile hiç uğraşmanız gerekmiyor. Hatta bu platformlar CDN
+gibi sistemlerle sitenin daha “güçlü” (örneğin DDoS saldırılarına dayanıklılık
+gibi) bir altyapıda sunulmasını sağlıyorlar. Elbette bu servislerin de limitleri
+var ama ben onlara henüz uzağım.&lt;/p&gt;
+
+&lt;p&gt;Statik site üreteçlerini değerlendirdiğim zaman ise şu çıkarımları yapabilirim:
+Bu araçları çalıştırmak için sitenin derleneceği bilgisayara kurulmaları
+gerekiyor. Örneğin Sphinx ve MkDocs Python, Jekyll Ruby, denemediğim fakat
+derlenme süresi ile fark yarattığını gördüğüm Hugo ise Go temelli. Günümüzde
+kullanımı kolaylaşan Github Actions gibi CI/CD sistemlerine geçildiğinde aslında
+çalışılan bilgisayara yazılım kurulmasa bile otomasyon sistemleri ile sitenin
+derlenmesini sağlamak mümkün. Yazının başlarında belirttiğim gibi önceden Jekyll
+kullanımında zorlanıyordum fakat güncel durumda Python temelli bir araç
+kullanmaktan daha zor gelmiyor, Go tarafını bilmiyorum. Local’e kurulma
+zorunluluğu olmasa da bilgisayarda bulunması işleri kolaylaştırabiliyor elbette.&lt;/p&gt;
+
+&lt;p&gt;MkDocs ve Jekyll için ana kaynak format Markdown, Sphinx için ise
+reStructuredText. Sphinx Markdown ile de çalıştırılabiliyor ama reST kadar iyi
+bir destek sağlanıyor mu bilmiyorum. Sphinx’in çıktılarını arka planda bir web
+sunucusu olmadan, çıkan &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.html&lt;/code&gt; dosyalarını dosya sistemi üzerinden doğrudan
+tarayıcı ile açarak düzgün görüntülemek mümkün. Sanıyorum MkDocs da böyleydi.
+Jekyll ise basit de olsa bir web sunucusuna ihtiyaç duyuyor. Jekyll’nin dahili
+web sunucusu da kullanılabilir ya da görüntüleme yapılacak platformda Ruby
+çalıştırılamıyorsa Python’da dahili bulunan &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SimpleHTTPServer&lt;/code&gt; gibi bir araçla
+da web sunucusu oluşturulup Jekyll’nin çıktılarına bakılabilir.&lt;/p&gt;
+
+&lt;p&gt;Yazıyı geçişi not almak için hazırlıyordum ama beklediğimden uzun oldu, biraz da
+karşılaştırma yazısı gibi oldu. Belki bu ve diğer web sitelerindeki
+tecrübelerimi de katarak daha kapsamlı bir karşılaştırma yazısı
+hazırlayabilirim.&lt;/p&gt;</content><author><name>Alper Yazar</name></author><category term="blog" /><category term="tr" /><category term="jekyll" /><summary type="html">Döndüm dolaştım yine Jekyll'ye geçtim</summary></entry><entry><title type="html">Using WSL on an offline Windows machine</title><link href="https://www.ayazar.com/log/2021/03/wsl-offline.html" rel="alternate" type="text/html" title="Using WSL on an offline Windows machine" /><published>2021-03-16T00:00:00+03:00</published><updated>2021-07-21T23:32:46+03:00</updated><id>https://www.ayazar.com/log/2021/03/wsl-offline</id><content type="html" xml:base="https://www.ayazar.com/log/2021/03/wsl-offline.html">&lt;p&gt;In this post, we will install Ubuntu 20.04 WSL package on an &lt;strong&gt;offline&lt;/strong&gt;
+Windows 10 machine. Although this post is prepared with Ubuntu 20.04, the steps
+should be valid for other WSL packages too.&lt;/p&gt;
+
+&lt;h1 id=&quot;getting-files&quot;&gt;Getting files&lt;/h1&gt;
+
+&lt;p&gt;If your Windows machine is connected to the Internet and you can easily install
+WSL packages via Microsoft Store like by clicking &lt;em&gt;Download from the Microsoft
+Store&lt;/em&gt; &lt;a href=&quot;https://ubuntu.com/wsl&quot;&gt;here&lt;/a&gt;. To install it on an offline machine,
+first we get &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.appx&lt;/code&gt; package for a corresponding guest OS from Microsoft. All
+available Packages are listed
+&lt;a href=&quot;https://docs.microsoft.com/en-us/windows/wsl/install-manual#downloading-distributions&quot;&gt;here&lt;/a&gt;.
+Transfer the downloaded package to the target offline machine. For example, when
+I am writing this post, to install Ubuntu 20.04 I get
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ubuntu_2004.2020.424.0_x64.appx&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;enabling-wsl-on-windows&quot;&gt;Enabling WSL on Windows&lt;/h1&gt;
+
+&lt;p&gt;Open a PowerShell terminal and type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wsl&lt;/code&gt;. If you get an error about not recognized
+command, first you should enable WSL. The official instructions are given
+&lt;a href=&quot;https://docs.microsoft.com/en-us/windows/wsl/install-win10#set-your-distribution-version-to-wsl-1-or-wsl-2&quot;&gt;here&lt;/a&gt;.
+Alternatively you can do it with GUI. Find &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Programs and Features&lt;/code&gt; on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Control Panel&lt;/code&gt;,
+then click &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Turn Windows features on or off&lt;/code&gt; as shown below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/kb/215-2-71353083-wsl-enable.png&quot; alt=&quot;WSL enable&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After rebooting Windows, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wsl&lt;/code&gt; command should be available to use and should be
+working on PowerShell. Since we don’t have any installed WSL guest OS on the PC,
+it will say  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;... no installed distributions.&lt;/code&gt;&lt;/p&gt;
+
+&lt;p class=&quot;notice--info&quot;&gt;If your machine
+&lt;a href=&quot;https://docs.microsoft.com/en-us/windows/wsl/install-win10#step-2---check-requirements-for-running-wsl-2&quot;&gt;satisfies&lt;/a&gt;
+requirements for WSL 2 and you don’t have any &lt;a href=&quot;https://docs.microsoft.com/en-us/windows/wsl/compare-versions&quot;&gt;specific
+reason&lt;/a&gt; to stick
+with WSL (1), I recommended to switch to WSL 2 now but you can stick with WSL
+(1) either. I am not using WSL 2 but I think the following steps should be fine
+for WSL 2 too.&lt;/p&gt;
+
+&lt;h1 id=&quot;installing-wsl-package&quot;&gt;Installing WSL package&lt;/h1&gt;
+
+&lt;p&gt;In theory, the following command given in the &lt;a href=&quot;https://docs.microsoft.com/en-us/windows/wsl/install-manual#installing-your-distro&quot;&gt;official
+page&lt;/a&gt;
+should do the work.&lt;/p&gt;
+
+&lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Add-AppxPackage&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;\Ubuntu_2004.2020.424.0_x64.appx&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;error-the-service-has-not-been-started&quot;&gt;Error: “The service has not been started”&lt;/h1&gt;
+
+&lt;p&gt;After installing the package, you can find the installed software by typing
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ubuntu&lt;/code&gt; in Windows Start menu search. &lt;strong&gt;However&lt;/strong&gt; in my case, I couldn’t
+start the Ubuntu WSL and got the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;The service has not been started.&lt;/code&gt; error as
+shown below. This is probably related to version of Windows 10.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/kb/215-2-71353083-wsl-error.png&quot; alt=&quot;WSL The service has not been started error&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;solution&quot;&gt;Solution&lt;/h2&gt;
+
+&lt;p&gt;You can remove &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ubuntu&lt;/code&gt; found in Windows Start menu by right clicking and selecting
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Uninstall&lt;/code&gt; since we won’t use it.&lt;/p&gt;
+
+&lt;p&gt;One solution recommended by Microsoft is extracting &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.appx&lt;/code&gt; file with an file
+archiver program, like 7-Zip by right clicking on file and selecting &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Extract&lt;/code&gt;
+option, and then running &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ubuntu2004.exe&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p class=&quot;notice--danger&quot;&gt;After extraction please make sure that your folder is at right place. Although
+it is possible to move folders to another location, in my case moving folders
+&lt;strong&gt;after&lt;/strong&gt; installation gives me &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Cannot find the specified path&lt;/code&gt; error. So
+before installation make sure that this is the correct location. After
+installation, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rootfs&lt;/code&gt; folder is created next to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ubuntu2004.exe&lt;/code&gt; and file
+system of the Linux will live here. So make sure that you have enough space for
+your future needs. The WSL is somehow &lt;em&gt;fragile&lt;/em&gt; &lt;sup id=&quot;fnref:1f&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1f&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. Although it is possible
+to move files as moving ordinary files in Windows after installation,
+be ready for side effects.&lt;/p&gt;
+
+&lt;p&gt;With first run the installation process begins
+and you are prompted to select an username and associated password. After
+completing installation, you can use your Linux distro. Notice that file system
+for the Linux is created under &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rootfs&lt;/code&gt; folder. After installation, Ubuntu 20.04
+creates ~40K items in its folder.&lt;/p&gt;
+
+&lt;h1 id=&quot;pitfall-moving-ubuntu-2004-after-installation&quot;&gt;Pitfall: Moving Ubuntu 20.04 After Installation&lt;/h1&gt;
+
+&lt;p&gt;I got &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Cannot find the specified path&lt;/code&gt; error when I moved to another folder
+after installation. Other people report the same problem too &lt;sup id=&quot;fnref:1f:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1f&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. In my case,
+since I was using fresh Ubuntu installation, I reinstalled it but I don’t know the
+proper solution if you don’t want to loose your distro. Some people also
+reported that a Windows update also breaks the WSL &lt;sup id=&quot;fnref:1f:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1f&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, so… yeah, classical
+Windows…&lt;/p&gt;
+
+&lt;h2 id=&quot;solution-1&quot;&gt;Solution&lt;/h2&gt;
+
+&lt;p&gt;Even if you decide to reinstall the Ubuntu at the new location, when you run
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ubuntu2004.exe&lt;/code&gt; you get &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;The system cannot find the path specified&lt;/code&gt; error.
+Even if you run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wsl&lt;/code&gt; on PowerShell you get the same error. The reason is
+the previous machine is still registered. If you run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wslconfig /l&lt;/code&gt;, you will
+see the previous machine. So first &lt;em&gt;unregister&lt;/em&gt; the previous distro, example:&lt;/p&gt;
+
+&lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;wslconfig&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;/u&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Ubuntu-20.04&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;After that, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wsl&lt;/code&gt; command should run, then you can install the Ubuntu to a
+new location.&lt;/p&gt;
+
+&lt;p class=&quot;notice--info&quot;&gt;If you know how to move installed distro without reinstalling again, please
+comment. Maybe &lt;a href=&quot;https://stackoverflow.com/a/51767786&quot;&gt;this&lt;/a&gt;?&lt;/p&gt;
+
+&lt;h1 id=&quot;error-wslregisterdistribution-failed-with-error-0x80070005&quot;&gt;Error: “WslRegisterDistribution failed with error: 0x80070005”&lt;/h1&gt;
+
+&lt;p&gt;When I tried to install the distro runnig &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ubuntu2004.exe&lt;/code&gt; on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;D:&lt;/code&gt; drive, I
+got this error but if I run it on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C:&lt;/code&gt; drive everything works. This is probably
+due to security settings of my Windows machine.&lt;/p&gt;
+
+&lt;h2 id=&quot;solution-2&quot;&gt;Solution&lt;/h2&gt;
+
+&lt;p&gt;Since I don’t want to bother with these settings, I chose to &lt;strong&gt;Run as
+administrator&lt;/strong&gt; on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;D:&lt;/code&gt; drive. After installation, user is able to run the
+distro and no privilege is required. Similar problems and proper solutions also
+exist &lt;sup id=&quot;fnref:2f&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2f&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;, &lt;sup id=&quot;fnref:3f&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:3f&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;, &lt;sup id=&quot;fnref:4f&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:4f&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;Although using a Linux distro on Windows in a &lt;em&gt;native&lt;/em&gt; way is a very good
+experience, WSL doesn’t look so solid and may become broken after an Windows
+update. So if you are planning to use be ready for possible future problems.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1f&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://github.com/microsoft/WSL/issues/3976#issuecomment-581617473&quot;&gt;https://github.com/microsoft/WSL/issues/3976#issuecomment-581617473&lt;/a&gt; &lt;a href=&quot;#fnref:1f&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt; &lt;a href=&quot;#fnref:1f:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; &lt;a href=&quot;#fnref:1f:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2f&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://scriptech.io/windows-10-1903-wsl-access-is-denied-error-0x80070005/&quot;&gt;https://scriptech.io/windows-10-1903-wsl-access-is-denied-error-0x80070005/&lt;/a&gt; &lt;a href=&quot;#fnref:2f&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:3f&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://scriptech.io/group-policy-use-a-custom-security-template-in-a-group-policy-to-globally-manage-the-lxssmanager-service/&quot;&gt;https://scriptech.io/group-policy-use-a-custom-security-template-in-a-group-policy-to-globally-manage-the-lxssmanager-service/&lt;/a&gt; &lt;a href=&quot;#fnref:3f&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:4f&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://github.com/Microsoft/WSL/issues/3054&quot;&gt;https://github.com/Microsoft/WSL/issues/3054&lt;/a&gt; &lt;a href=&quot;#fnref:4f&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Alper Yazar</name></author><category term="kb" /><category term="en" /><category term="offline" /><category term="wsl" /><category term="windows" /><category term="ubuntu" /><summary type="html">How to install WSL on a Windows machine not connected to the Internet</summary></entry><entry><title type="html">Using VS Code with self signed SSL certificates behind proxy</title><link href="https://www.ayazar.com/log/2020/11/using-vscode-with-self-signed-certificates-behind-proxy.html" rel="alternate" type="text/html" title="Using VS Code with self signed SSL certificates behind proxy" /><published>2020-11-26T00:00:00+03:00</published><updated>2021-07-22T14:54:29+03:00</updated><id>https://www.ayazar.com/log/2020/11/using-vscode-with-self-signed-certificates-behind-proxy</id><content type="html" xml:base="https://www.ayazar.com/log/2020/11/using-vscode-with-self-signed-certificates-behind-proxy.html">&lt;p&gt;Similar to the case I mentioned in &lt;a href=&quot;/log/2020/11/using-pip-and-pipenv-with-self-signed-certificates.html&quot;&gt;my previous post&lt;/a&gt;, you may want
+to use VS Code behind a proxy which also signs SSL traffic with a self signed
+certificate. In that case, Internet related features of the VS Code like
+Extensions Marketplace won’t work.&lt;/p&gt;
+
+&lt;h1 id=&quot;solution&quot;&gt;Solution&lt;/h1&gt;
+
+&lt;h2 id=&quot;ssl-certificate&quot;&gt;SSL certificate&lt;/h2&gt;
+
+&lt;p&gt;If we know that the proxy checks the certificates correctly and signs the packets
+with a self signed certificate, we can safely ignore certificate errors by
+trusting the proxy.&lt;/p&gt;
+
+&lt;p&gt;Just start the VS Code with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--ignore-certificate-errors&lt;/code&gt; flag like&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;code &lt;span class=&quot;nt&quot;&gt;--ignore-certificate-errors&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p class=&quot;notice--warning&quot;&gt;This approach is suitable if you &lt;strong&gt;know&lt;/strong&gt; that you are behind a proxy or a
+similar equipment that signs the traffic with self-signed certificates.
+Since &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--ignore-certificate-errors&lt;/code&gt; flag disables SSL checking, this will
+cause a potential security risk if you are not in such network, like working
+at home.&lt;/p&gt;
+
+&lt;h2 id=&quot;proxy&quot;&gt;Proxy&lt;/h2&gt;
+
+&lt;p&gt;You can set proxy for system wide or just for VS Code.&lt;/p&gt;
+
+&lt;h3 id=&quot;using-environment-variables&quot;&gt;Using environment variables&lt;/h3&gt;
+
+&lt;p&gt;On Linux (and probably somehow on Windows), you can use environment variables
+to pass proxy information to VS Code. Environment variables are processed in an
+order &lt;sup id=&quot;fnref:1f&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1f&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. According to this, setting &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https_proxy&lt;/code&gt; should be sufficient.
+Generally, I set both &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;http_proxy&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https_proxy&lt;/code&gt; on my systems. I did a
+small test to check effects of setting variables on VS Code.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;https_proxy&lt;/th&gt;
+      &lt;th&gt;http_proxy&lt;/th&gt;
+      &lt;th&gt;Works?&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Correct&lt;/td&gt;
+      &lt;td&gt;Correct&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Correct&lt;/td&gt;
+      &lt;td&gt;Incorrect&lt;/td&gt;
+      &lt;td&gt;Yes&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Incorrect&lt;/td&gt;
+      &lt;td&gt;Correct&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Incorrect&lt;/td&gt;
+      &lt;td&gt;Incorrect&lt;/td&gt;
+      &lt;td&gt;No&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;As you can see, setting &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https_proxy&lt;/code&gt; is sufficient but I recommend to set
+both &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https_proxy&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;http_proxy&lt;/code&gt; on your system because other software
+may use both of them.&lt;/p&gt;
+
+&lt;p&gt;For example, you can set an environment variable on Linux with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.bashrc&lt;/code&gt;. You
+may add the following commands at the end of the file&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;http_proxy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;http://&amp;lt;ip.addr&amp;gt;:&amp;lt;port&amp;gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;https_proxy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$http_proxy&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;only-for-vs-code&quot;&gt;Only for VS Code&lt;/h3&gt;
+
+&lt;p&gt;You can also set proxy information just for VS Code. To set proxy URL just for
+VS Code, go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;File&lt;/code&gt; → &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Preferences&lt;/code&gt; → &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Settings&lt;/code&gt; and search for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Proxy&lt;/code&gt; then
+enter the proxy URL in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Http: Proxy&lt;/code&gt;. You can leave other settings at default
+values. (You don’t need to disable &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Http: Proxy Strict SSL&lt;/code&gt;.)&lt;/p&gt;
+
+&lt;p&gt;Without using GUI, in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;settings.json&lt;/code&gt; set
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;http.proxy&quot;:&quot;http://&amp;lt;ip.addr&amp;gt;:&amp;lt;port&amp;gt;&quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1f&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://github.com/microsoft/vscode/issues/84845#issuecomment-558952807&quot;&gt;https://github.com/microsoft/vscode/issues/84845#issuecomment-558952807&lt;/a&gt; &lt;a href=&quot;#fnref:1f&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Alper Yazar</name></author><category term="kb" /><category term="en" /><category term="vscode" /><category term="proxy" /><category term="ssl" /><summary type="html">How to work with VS Code behind proxy with self signed SSL certificates</summary></entry><entry><title type="html">Use pip and pipenv with self signed SSL certificates</title><link href="https://www.ayazar.com/log/2020/11/using-pip-and-pipenv-with-self-signed-certificates.html" rel="alternate" type="text/html" title="Use pip and pipenv with self signed SSL certificates" /><published>2020-11-20T00:00:00+03:00</published><updated>2021-07-22T10:57:57+03:00</updated><id>https://www.ayazar.com/log/2020/11/using-pip-and-pipenv-with-self-signed-certificates</id><content type="html" xml:base="https://www.ayazar.com/log/2020/11/using-pip-and-pipenv-with-self-signed-certificates.html">&lt;p&gt;If you work in a cooperate environment, you may be working behind proxies and
+SSL traffic may be signed by self-signed certificates. This may cause problems
+while working with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pip&lt;/code&gt; and especially with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pipenv&lt;/code&gt;. With current versions
+of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pip&lt;/code&gt;, it is possible to ignore SSL errors using the following
+example command &lt;sup id=&quot;fnref:1f&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1f&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pip &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--trusted-host&lt;/span&gt; pypi.org &lt;span class=&quot;nt&quot;&gt;--trusted-host&lt;/span&gt; files.pythonhosted.org &amp;lt;package_name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p class=&quot;notice--warning&quot;&gt;This approach is suitable if you &lt;strong&gt;know&lt;/strong&gt; that you are behind a proxy or
+a similar equipment that signs the traffic with self-signed certificates.
+Since &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--trusted-host&lt;/code&gt; flag disables SSL checking, this will cause a
+potential security risk if you are not in such network, like working at
+home.&lt;/p&gt;
+
+&lt;p&gt;I found that &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--trusted-host&lt;/code&gt; flag doesn’t work as expected while working with
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pipenv&lt;/code&gt;. There are some records about this issue &lt;sup id=&quot;fnref:2f&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2f&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;, &lt;sup id=&quot;fnref:3f&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:3f&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;. Even with the
+flag, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pip&lt;/code&gt; throws errors when invoked by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pipenv&lt;/code&gt; in my setup.&lt;/p&gt;
+
+&lt;h1 id=&quot;solution&quot;&gt;Solution&lt;/h1&gt;
+
+&lt;p&gt;For me, setting &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;REQUESTS_CA_BUNDLE&lt;/code&gt; environment variable prior to calling
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pipenv&lt;/code&gt; solves the problem. (I found the solution on the Stack Overflow but I
+can’t remember the link). Of course, the certificate file pointed by the
+varible should include the self signed certificate.&lt;/p&gt;
+
+&lt;h2 id=&quot;ubuntu&quot;&gt;Ubuntu&lt;/h2&gt;
+
+&lt;p&gt;I tested on Ubuntu 16.04 but this may work on all Debian and Ubuntu derived
+distros.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;REQUESTS_CA_BUNDLE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/etc/ssl/certs/ca-certificates.crt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;centos&quot;&gt;CentOS&lt;/h2&gt;
+
+&lt;p&gt;I tested on CentOS 7.8 but this may work on all RedHat derived distros.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;REQUESTS_CA_BUNDLE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/etc/pki/ca-trust/extracted/openssl/ca-bundle.trust.crt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1f&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/a/29751768&quot;&gt;https://stackoverflow.com/a/29751768&lt;/a&gt; &lt;a href=&quot;#fnref:1f&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2f&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://github.com/pypa/pipenv/issues/3841&quot;&gt;https://github.com/pypa/pipenv/issues/3841&lt;/a&gt; &lt;a href=&quot;#fnref:2f&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:3f&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://github.com/pypa/pipenv/issues/2979&quot;&gt;https://github.com/pypa/pipenv/issues/2979&lt;/a&gt; &lt;a href=&quot;#fnref:3f&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Alper Yazar</name></author><category term="kb" /><category term="en" /><category term="pip" /><category term="pipenv" /><category term="proxy" /><category term="ssl" /><summary type="html">Use pip and pipenv with self signed SSL certificates</summary></entry><entry><title type="html">Tekrar Merhaba MkDocs!</title><link href="https://www.ayazar.com/log/2020/09/tekrar-merhaba-mkdocs.html" rel="alternate" type="text/html" title="Tekrar Merhaba MkDocs!" /><published>2020-09-27T00:00:00+03:00</published><updated>2021-05-12T08:57:41+03:00</updated><id>https://www.ayazar.com/log/2020/09/tekrar-merhaba-mkdocs</id><content type="html" xml:base="https://www.ayazar.com/log/2020/09/tekrar-merhaba-mkdocs.html">&lt;p&gt;Tekrar MkDocs’a geri döndüm. Bu sefer kendi temamı kullanıyorum, çok basit bir
+tema. Dokuwiki güzel ama bir şeyleri “host” etmek yerine Github Pages gibi bir
+servis üzerinden sunulması ve sunucu ile uğraşmamayı tercih ettim. Ek olarak
+içeriğin Git ile kontrol edilmesi de hoşuma gittiğinden statik site üreticisi
+olan MkDocs’a geri döndüm.&lt;/p&gt;</content><author><name>Alper Yazar</name></author><category term="blog" /><category term="tr" /><category term="mkdocs" /><summary type="html">Dokuwiki'den MkDocs'a geçiş</summary></entry><entry><title type="html">Tekrar Merhaba DokuWiki!</title><link href="https://www.ayazar.com/log/2020/04/tekrar-merhaba-dokuwiki.html" rel="alternate" type="text/html" title="Tekrar Merhaba DokuWiki!" /><published>2020-04-11T00:00:00+03:00</published><updated>2021-05-12T08:57:41+03:00</updated><id>https://www.ayazar.com/log/2020/04/tekrar-merhaba-dokuwiki</id><content type="html" xml:base="https://www.ayazar.com/log/2020/04/tekrar-merhaba-dokuwiki.html">&lt;p&gt;Tekrar DokuWiki’ye döndüm :)&lt;/p&gt;</content><author><name>Alper Yazar</name></author><category term="blog" /><category term="tr" /><category term="dokuwiki" /><summary type="html">MkDocs'tan Dokuwiki'ye geçiş</summary></entry><entry><title type="html">Güncel Doğrulama Yöntemleri</title><link href="https://www.ayazar.com/log/2020/03/guncel-dogrulama-yontemleri.html" rel="alternate" type="text/html" title="Güncel Doğrulama Yöntemleri" /><published>2020-03-15T00:00:00+03:00</published><updated>2021-04-11T15:11:10+03:00</updated><id>https://www.ayazar.com/log/2020/03/guncel-dogrulama-yontemleri</id><content type="html" xml:base="https://www.ayazar.com/log/2020/03/guncel-dogrulama-yontemleri.html">&lt;p&gt;Mentor’a ait &lt;a href=&quot;https://verificationacademy.com/&quot;&gt;Verification Academy&lt;/a&gt;
+sitesine üye olurken sorduğu birçok soru vardı. Bu sorulardan güncel FPGA veya
+ASIC doğrulama araçlarını, yöntemlerini görmek mümkün diye ekran görüntülerini
+aldım. Kayıt olması için aşağıya koyuyorum. 10 Şubat 2020’de almışım.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/20/2020-03-15-a.png&quot; alt=&quot;Screen Shoot 1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/20/2020-03-15-b.png&quot; alt=&quot;Screen Shoot 2&quot; /&gt;&lt;/p&gt;</content><author><name>Alper Yazar</name></author><category term="blog" /><category term="tr" /><category term="fpga" /><category term="verification" /><summary type="html">FPGA (veya ASIC) doğrulamasındaki güncel yöntemler</summary></entry></feed>
